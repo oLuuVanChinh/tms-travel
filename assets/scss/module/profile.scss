@@ -1,0 +1,46 @@
+@import "../common/mixins";
+@import "../common/variables";
+.profile-wrap {
+  .profile-avatar {
+    flex: 0 0 170px;
+
+    img {
+      width: 170px;
+      height: 170px;
+      border-radius: 50%;
+      border: 3px solid #C4C9D4;
+    }
+  }
+
+  .profile-head{
+    padding-top: 15px;
+  }
+
+  label, span {
+    display: block;
+  }
+
+  label {
+    margin-bottom: 12px;
+  }
+
+  span {
+    margin-bottom: 15px;
+  }
+
+  .info-item {
+    border-top: 1px solid #C4C9D4;
+    padding: 14px 0 5px;
+  }
+
+  .name {
+    font-weight: bold;
+    font-size: 36px;
+  }
+
+  .position {
+    font-weight: bold;
+    font-size: 16px;
+    margin: 14px 0 30px;
+  }
+}

@@ -1,0 +1,106 @@
+//
+// Mixins
+// --------------------------------------------------
+
+//== Css3 compatible
+//
+//## Css3 compatible. Atribute for all browser (chorme, firefox, safari, opera, ie)
+@mixin css3-compatible($atribute, $params) {
+  #{$atribute}: #{$params};
+  -webkit-#{$atribute}: #{$params};
+  -khtml-#{$atribute}: #{$params};
+  -moz-#{$atribute}: #{$params};
+  -ms-#{$atribute}: #{$params};
+  -o-#{$atribute}: #{$params};
+}
+
+//== Border radius
+//
+//## Border radius for rounded corners
+@mixin border-radius($top: 2px, $right: 2px, $bottom: 2px, $left: 2px) {
+    @include css3-compatible('border-radius', $top $right $bottom $left);
+}
+
+//== Opacity
+//
+//## Opacity fade out for element
+@mixin opacity($params: 0.5) {
+    $opacityMultiplied: ($params * 100);
+    filter:         alpha(opacity=$opacityMultiplied);
+    -ms-filter:     "progid:DXImageTransform.Microsoft.Alpha(Opacity=" + $opacityMultiplied + ")";
+    @include css3-compatible('opacity', $params);
+}
+
+//== Box shadow
+//
+//## Box shadow for element.
+@mixin box-shadow($mode: "", $h-shadow: "0px", $v-shadow: "2px", $blur: "5px", $spread: "0px", $color: "rgba(0,0,0,0.2)", $type: "") {
+  @if($mode == "none"){
+    @include css3-compatible('box-shadow', "none");
+  } @else {
+    @include css3-compatible('box-shadow', $type $h-shadow $v-shadow $blur $spread $color);
+  }
+}
+
+//== Box Center
+//
+//## Box auto center custom width.
+@mixin box-center($width: "900px") {
+  width: $width;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+//== Box Fix size
+//
+//## Box Fix size custom width.
+@mixin box-fix($width: "900px") {
+  width: $width;
+}
+
+//== Box Size
+//
+//## Width and Height for box.
+@mixin box-size($width, $height){
+  width: $width;
+  height: $height;
+}
+
+//== Box Min Height
+//
+//## min height for box.
+@mixin min-height($height){
+  min-height: $height;
+}
+
+//== Keyframes
+//
+//## Keyframes Animation css3
+@mixin keyframes($animation-name) {
+  @-webkit-keyframes #{$animation-name} {
+    @content;
+  }
+  @-moz-keyframes #{$animation-name} {
+    @content;
+  }
+  @-ms-keyframes #{$animation-name} {
+    @content;
+  }
+  @-o-keyframes #{$animation-name} {
+    @content;
+  }
+  @keyframes #{$animation-name} {
+    @content;
+  }
+}
+
+//== Spiner
+//
+//## Spiner Animation css3
+@mixin spiner() {
+  @include keyframes(spin){
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  @include css3-compatible("animation", spin 2s linear infinite);
+}
