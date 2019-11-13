@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>TMS Travel</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.0/slick/slick.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.0/slick/slick-theme.css">
+    <link rel="stylesheet" href="../assets/fonts/icomoon/style.css">
+    <link href="https://vjs.zencdn.net/7.6.5/video-js.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+</head>
+
+<body>
+<header id="header">
+    <!-- header top -->
+    <div class="header-top">
+        <div class="container">
+            <div class="top-inner">
+                <div class="row">
+                    <div class="col-4 col-lg-6">
+                        <div class="header-block block-weather">
+                            <div class="icon item">
+                                <i class="icon-location"></i>
+                            </div>
+                            <p class="mb-0">Tầng 4, tòa nhà Vimeco, Phạm Hùng, Hà Nội.</p>
+                        </div>
+                    </div>
+                    <div class="col-4 col-lg-3">
+                        <div class="header-block">
+                            <p class="mb-0">Hotline: 19002123</p>
+                        </div>
+                    </div>
+                    <div class="col-4 col-lg-3 d-flex justify-content-end">
+                        <div class="header-block block-weather">
+                            <div class="icon item">
+                                <i class="icon-hotline"></i>
+                            </div>
+                            <p class="mb-0">Supplier</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- header primary (Logo, Menu) -->
+    <div class="header-primary">
+        <div class="container">
+            <div class="row align-items-end">
+                <div class="col-6 col-md-3">
+                    <!-- Logo -->
+                    <div class="logo">
+                        <h1 class="mb-0"><a href="home.html"><img
+                                src="../assets/images/logo.png"></a>
+                        </h1>
+                    </div>
+                </div>
+                <div class="col-md-9 d-flex flex-column align-items-end justify-content-end">
+                    <!-- Login -->
+                    <div class="section-login">
+                        <a href="#" class="button">
+                            <i class="icon-user"></i>
+                            <span>Đăng nhập</span>
+                        </a>
+                    </div>
+                    <!-- Menu -->
+                    <div id="navigation" class="navigation">
+                        <div class="menu-content menu-pc">
+                            <ul class="menu">
+                                <li class="menu-item active">
+                                    <a href="#">Trang chủ</a>
+                                </li>
+                                <li class="menu-item item-parent">
+                                    <a href="#">Điểm đến
+                                        <!-- icon arrow down for menu has child -->
+                                        <span class="icon">
+                                            <i class="icofont-simple-down"></i>
+                                        </span>
+                                    </a>
+                                    <ul class="sub-menu">
+                                        <li class="menu-item item-parent">
+                                            <a href="#">Level 1
+                                                <!-- icon arrow down for menu has child -->
+                                                <span class="icon">
+                                                    <i class="icofont-simple-right"></i>
+                                                </span>
+                                            </a>
+                                            <ul class="sub-menu">
+                                                <li class="menu-item item-parent">
+                                                    <a href="#">Level 2
+                                                        <!-- icon arrow down for menu has child -->
+                                                        <span class="icon">
+                                                            <i class="icofont-simple-right"></i>
+                                                        </span>
+                                                    </a>
+                                                    <ul class="sub-menu">
+                                                        <li class="menu-item">
+                                                            <a href="#">Level 3</a>
+                                                        </li>
+                                                        <li class="menu-item">
+                                                            <a href="#">Level 3</a>
+                                                        </li>
+                                                        <li class="menu-item">
+                                                            <a href="#">Level 3</a>
+                                                        </li>
+                                                        <li class="menu-item">
+                                                            <a href="#">Level 3</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li class="menu-item">
+                                                    <a href="#">Level 2</a>
+                                                </li>
+                                                <li class="menu-item">
+                                                    <a href="#">Level 2</a>
+                                                </li>
+                                                <li class="menu-item">
+                                                    <a href="#">Level 2</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="menu-item">
+                                            <a href="#">Level 1</a>
+                                        </li>
+                                        <li class="menu-item">
+                                            <a href="#">Level 1</a>
+                                        </li>
+                                        <li class="menu-item">
+                                            <a href="#">Level 1</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">Tours</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">Khách sạn</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">Phương tiện</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">Cẩm nang</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- Banner -->
+<div class="banner">
+    <!-- Section Cover Image -->
+    <div class="cover-image">
+        <img src="../assets/images/banner-detail.jpg" alt=""/>
+    </div>
+</div>
+<!-- Content -->
+<div id="content">
+    <!-- Content Primary -->
+    <div class="content-primary">
+        <!-- Content Area -->
+        <section class="content-area content-single">
+            <div class="container">
+                <!-- Section Detail Header -->
+                <section class="section-content">
+                    <div class="head box-shadow">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="info flex-grow-1">
+                                <div class="d-flex justify-content-between">
+                                    <div class="name">
+                                        <strong>Tour Hạ Long - Quảng Ninh - Cát Bà</strong>
+                                        <span>(3 Ngày 2 đêm)</span>
+                                    </div>
+                                    <div class="price">
+                                        <span>2.452.000đ/Người</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="booking-buttom">
+                                <a href="#" class="button button-large">Đặt Ngay</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Section breadcrumb -->
+                <section class="section-content">
+                    <div class="d-flex">
+                        <div class="breadcrumb">
+                            <ul>
+                                <li class="item"><a href="#">Home</a></li>
+                                <li class="item separate">/</li>
+                                <li class="item"><a href="#">Viet Nam</a></li>
+                                <li class="item separate">/</li>
+                                <li class="item"><span>Quy Nhơn</span></li>
+                            </ul>
+                        </div>
+                        <ul class="tags">
+                            <li><a href="#" class="active">Viet Nam</a></li>
+                            <li><a href="#" class="active">Da Nang</a></li>
+                            <li><a href="#">Nha Trang</a></li>
+                            <li><a href="#">Mũi Né</a></li>
+                        </ul>
+                    </div>
+                </section>
+                <!-- Section content detail -->
+                <section class="section-content">
+                    <div class="detail-content">
+                        <div class="row">
+                            <!-- Detail Gallery -->
+                            <div class="col-12 col-md-8">
+                                <div class="detail-gallery">
+                                    <div class="module__slider primary-gallery"
+                                         data-slick='{"arrows": true, "asNavFor": ".thumbnail-gallery"}'>
+                                        <div class="gallery-item">
+                                            <img src="../assets/images/img-detail-1.jpg" alt=""/>
+                                        </div>
+                                        <div class="gallery-item">
+                                            <img src="../assets/images/img-detail-2.jpg" alt=""/>
+                                        </div>
+                                        <div class="gallery-item">
+                                            <img src="../assets/images/img-detail-3.jpg" alt=""/>
+                                        </div>
+                                        <div class="gallery-item">
+                                            <img src="../assets/images/img-detail-4.jpg" alt=""/>
+                                        </div>
+                                        <div class="gallery-item">
+                                            <img src="../assets/images/img-detail-5.jpg" alt=""/>
+                                        </div>
+                                        <div class="gallery-item">
+                                            <img src="../assets/images/img-detail-6.jpg" alt=""/>
+                                        </div>
+                                        <div class="gallery-item">
+                                            <img src="../assets/images/img-detail-7.jpg" alt=""/>
+                                        </div>
+                                        <div class="gallery-item">
+                                            <img src="../assets/images/img-detail-8.jpg" alt=""/>
+                                        </div>
+                                    </div>
+                                    <div class="module__slider thumbnail-gallery"
+                                         data-slick='{"arrows": false, "slidesToShow": 4, "asNavFor": ".primary-gallery", "focusOnSelect": true}'>
+                                        <div class="gallery-item">
+                                            <img src="../assets/images/img-detail-thumb-1.jpg" alt=""/>
+                                        </div>
+                                        <div class="gallery-item">
+                                            <img src="../assets/images/img-detail-thumb-2.jpg" alt=""/>
+                                        </div>
+                                        <div class="gallery-item">
+                                            <img src="../assets/images/img-detail-thumb-3.jpg" alt=""/>
+                                        </div>
+                                        <div class="gallery-item">
+                                            <img src="../assets/images/img-detail-thumb-4.jpg" alt=""/>
+                                        </div>
+                                        <div class="gallery-item">
+                                            <img src="../assets/images/img-detail-thumb-5.jpg" alt=""/>
+                                        </div>
+                                        <div class="gallery-item">
+                                            <img src="../assets/images/img-detail-thumb-6.jpg" alt=""/>
+                                        </div>
+                                        <div class="gallery-item">
+                                            <img src="../assets/images/img-detail-thumb-7.jpg" alt=""/>
+                                        </div>
+                                        <div class="gallery-item">
+                                            <img src="../assets/images/img-detail-thumb-8.jpg" alt=""/>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Detail feature -->
+                                <div class="detail-feature">
+                                    <div class="d-flex">
+                                        <div class="item">
+                                            <i class="icon-star"></i>
+                                            <strong>3.4</strong>
+                                        </div>
+                                        <div class="item">
+                                            <i class="icon-clock"></i>
+                                            <strong>7hours (Approx)</strong>
+                                        </div>
+                                        <div class="item">
+                                            <i class="icon-car"></i>
+                                            <strong>Xe đưa đón</strong>
+                                        </div>
+                                        <div class="item">
+                                            <i class="icon-bar"></i>
+                                            <strong>Quầy bar</strong>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Detail description -->
+                                <div class="detail-description">
+                                    <div class="item d-flex">
+                                        <i class="icon-tag-bold"></i>
+                                        <p>Mã 28</p>
+                                    </div>
+                                    <div class="item d-flex">
+                                        <i class="icon-quote"></i>
+                                        <p>Ngôn ngữ tiếng Việt, tiếng Anh, tiếng Hàn, tiếng Nhật, tiếng Pháp, tiếng
+                                            Đức</p>
+                                    </div>
+                                    <div class="item d-flex">
+                                        <i class="icon-check"></i>
+                                        <p>Món ăn độc đáo Cơm văn phòng, ẩm thực Nam Định<br/>
+                                            Thực đơn Tôm, Cua, Ốc, Ếch, Gà, Cá tươu, thịt thú rừng, đặc sản bún bò Nam
+                                            Định<br/>
+                                            Thời gian mở cửa 9h00 - 20h00 các ngày trong tuần; nghỉ thứ 7, chủ nhật và
+                                            các ngày lễ tết.<br/>
+                                            Sức chứa 200 khách<br/>
+                                            Quanh đây Hồ Gươm Hồ Tây Phố Cổ<br/>
+                                            Địa chỉ Lô E9 Phạm Hùng, Cầu Giấy, Hà Nội - xem bản đồ<br/>
+                                            Hotline 1900 0055<br/>
+                                            Email phanthi@thanhnam.vn</p>
+                                    </div>
+                                </div>
+                                <!-- Detail Form Select -->
+                                <div class="detail-options">
+                                    <div class="custom-heading">
+                                        <h3 class="title">Bảng giá</h3>
+                                    </div>
+                                    <form class="formSelectOptions">
+                                        <div class="row">
+                                            <div class="col-12 col-md-6">
+                                                <div class="input-group mb-3">
+                                                    <div class="input-group-prepend">
+                                                        <span class="input-group-text"><i class="icon-calendar"></i></span>
+                                                    </div>
+                                                    <input type="text" class="form-control" placeholder="DD / MM / YY">
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-md-6">
+                                                <div class="input-group mb-3">
+                                                    <div class="input-group-prepend">
+                                                        <span class="input-group-text"><i class="icon-user-plus"></i></span>
+                                                    </div>
+                                                    <input type="text" class="form-control" placeholder="1 Người">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="radio-select">
+                                            <div class="item">
+                                                <input type="radio" id="option_1" name="select" value="1" checked>
+                                                <label for="option_1" class="d-flex justify-content-between">
+                                                    <p class="d-block">
+                                                        <span class="d-block">Will The Democrats Be Able To Reverse The</span>
+                                                        <small>Live Poker How To Win Tournament Games</small>
+                                                    </p>
+                                                    <strong class="price">230.000đ /đêm</strong>
+                                                </label>
+                                            </div>
+                                            <div class="item">
+                                                <input type="radio" id="option_2" name="select" value="2">
+                                                <label for="option_2" class="d-flex justify-content-between">
+                                                    <p class="d-block">
+                                                        <span class="d-block">Will The Democrats Be Able To Reverse The</span>
+                                                        <small>Live Poker How To Win Tournament Games</small>
+                                                    </p>
+                                                    <strong class="price">230.000đ /đêm</strong>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <!-- Detail summary -->
+                            <div class="col-12 col-md-4">
+                                <div class="detail-summary">
+                                    <div class="summary-price d-flex justify-content-between">
+                                        <strong>Giá chỉ từ:</strong>
+                                        <span class="price">249.000đ / Người</span>
+                                    </div>
+                                    <div class="note"><span class="color-red">Đảm bảo giá thấp nhất thị trường</span>
+                                    </div>
+                                    <div class="summary-form">
+                                        <form class="formBooking">
+                                            <h3 class="title">Chọn ngày đặt</h3>
+                                            <div class="input-group mb-3">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text"><i class="icon-calendar"></i></span>
+                                                </div>
+                                                <input type="text" class="form-control" placeholder="DD / MM / YY">
+                                            </div>
+                                            <div class="input-group mb-3">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text"><i class="icon-user-plus"></i></span>
+                                                </div>
+                                                <input type="text" class="form-control" placeholder="1 Người">
+                                            </div>
+                                            <div class="input-submit">
+                                                <button type="submit" class="button">Đặt Ngay</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="summary-action">
+                                        <div class="note">
+                                            <p>Đặt giữ chỗ chỉ với 7% tổng hóa đơn.</p>
+                                            <p>Nhà cung cấp sẽ liên hệ ngay sau khi bạn đặt cọc thành công.</p>
+                                        </div>
+                                        <a href="#" class="button">Lưu sản phẩm</a>
+                                        <a href="#" class="button">Yêu cầu riêng</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </section>
+    </div>
+</div>
+<!-- Footer -->
+<footer id="footer">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-12 col-md-3">
+                <div class="logo">
+                    <a href="#" class="d-block">
+                        <img src="../assets/images/logo-footer.png" alt="">
+                    </a>
+                </div>
+                <div class="tax-info">
+                    <p>Công ty cổ phần dịch vụ TMS travel</p>
+                    <p>Mã số thuế: 000-111-222-333</p>
+                    <p>Văn phòng đại diện: Tầng 4, tòa nhà Vimeco, Phạm Hùng, Hà Nội.</p>
+                    <p>Hotline: 000-111-222-333</p>
+                </div>
+            </div>
+            <div class="col-12 col-md-3">
+                <div class="widget footer-widget">
+                    <h3 class="widget-title">Giới thiệu & Chính sách</h3>
+                    <div class="menu">
+                        <ul>
+                            <li><a href="#">Giới thiệu về TMS</a></li>
+                            <li><a href="#">Dịch vụ cung cấp</a></li>
+                            <li><a href="#">Tầm nhìn và sứ mệnh</a></li>
+                            <li><a href="#">Chi nhánh</a></li>
+                            <li><a href="#">Chính sách đặt tour</a></li>
+                            <li><a href="#">Chính sách khuyến mại</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-3">
+                <div class="widget footer-widget">
+                    <h3 class="widget-title">Đặt Tour tại TMS</h3>
+                    <div class="menu">
+                        <ul>
+                            <li><a href="#">Đồng hành cùng TMS Travel</a></li>
+                            <li><a href="#">Trải nghiệm độc đáo</a></li>
+                            <li><a href="#">Tầm nhìn và sứ mệnh</a></li>
+                            <li><a href="#">Chính sách giá</a></li>
+                            <li><a href="#">Chính sách đặt tour</a></li>
+                            <li><a href="#">Chính sách khuyến mại</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-3">
+                <div class="widget footer-widget">
+                    <h3 class="widget-title">Cơ hội việc làm</h3>
+                    <div class="menu">
+                        <ul>
+                            <li><a href="#">Tuyển dụng</a></li>
+                            <li><a href="#">Tuyển dụng hướng dẫn viên</a></li>
+                            <li><a href="#">Đối tác, hợp tác</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="widget footer-widget">
+                    <h3 class="widget-title">Social network</h3>
+                    <div class="social">
+                        <ul>
+                            <li><a href="#" class="facebook"><i class="icofont-facebook"></i></a></li>
+                            <li><a href="#" class="google"><i class="icofont-google-plus"></i></a></li>
+                            <li><a href="#" class="linkedin"><i class="icofont-linkedin"></i></a></li>
+                            <li><a href="#" class="twitter"><i class="icofont-twitter"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.0/slick/slick.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script src='https://vjs.zencdn.net/7.6.5/video.js'></script>
+<script type="text/javascript" src="../assets/script/theme.js"></script>
+</body>
+
+</html>
