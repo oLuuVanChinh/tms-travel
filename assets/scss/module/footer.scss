@@ -1,10 +1,7 @@
 @import "../common/mixins";
 @import "../common/variables";
 footer {
-    background-image: url('../images/bg-footer.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    background-color: $black-color;
     color: #fff;
     font-size: 12px;
     margin-top: 30px;

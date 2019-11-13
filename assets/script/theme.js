@@ -69,7 +69,9 @@
             // Slider
             if($('.module__slider').length > 0){
                 $('.module__slider').each(function () {
-                    $(this).slick();
+                    $(this).slick({
+                        arrows: false,
+                    });
                 });
             }
             
