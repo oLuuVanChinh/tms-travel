@@ -63,26 +63,24 @@
         border-radius: 8px 0 0 8px;
     }
     .slick-dots {
-        top: 50%;
-        left: calc((100% - 1170px) / 2);
         display: flex;
-        flex-direction: column;
         justify-content: center;
-        width: auto;
-        @include css3-compatible("transform", translateY(-50%));
+        bottom: 0;
+        position: relative;
+        margin: 24px 0 0;
         li {
             width: auto;
             height: auto;
-            margin: 4px 0;
+            margin: 0 10px;
             button {
                 padding: 0;
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                width: 8px;
-                height: 42px;
-                background: rgba(255,255,255,0.3);
-                border-radius: 4px;
+                width: 12px;
+                height: 12px;
+                border: 1px solid $accent-color;
+                border-radius: 50%;
                 &:before {
                     display: none;
                 }
@@ -91,7 +89,7 @@
 
         li.slick-active {
             button {
-                background-color: $white-color;
+                background-color: $accent-color;
             }
         }
     }
