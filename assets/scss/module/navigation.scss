@@ -13,24 +13,28 @@
       position: relative;
 
       a {
-        color: rgba(26, 26, 26, 0.4);
+        color: $black-color;
         font-size: 16px;
         font-weight: 600;
         text-decoration: none;
         padding: 0;
         display: block;
         position: relative;
-
+        text-transform: uppercase;
         &:after {
-          height: 4px;
-          width: 100%;
-          background-color: $accent-color;
+          height: 12px;
+          width: 12px;
+          border: 2px solid $accent-color;
+          background-color: $white-color;
           content: "";
           position: absolute;
           bottom: -20px;
-          left: 0;
+          left: 50%;
           opacity: 0;
           visibility: hidden;
+          border-radius: 50%;
+          @include css3-compatible("transform", translateX(-50%));
+          z-index: 1;
         }
 
         &:before {

@@ -5,7 +5,7 @@
     <title>TMS Travel</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i&display=swap"
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap"
           rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.0/slick/slick.css">
@@ -16,6 +16,7 @@
 </head>
 
 <body>
+<!-- Header -->
 <header id="header">
     <!-- header top -->
     <div class="header-top">
@@ -23,7 +24,7 @@
             <div class="top-inner">
                 <div class="row">
                     <div class="col-4 col-lg-6">
-                        <div class="header-block block-weather">
+                        <div class="header-block block-address">
                             <div class="icon item">
                                 <i class="icon-location"></i>
                             </div>
@@ -36,7 +37,7 @@
                         </div>
                     </div>
                     <div class="col-4 col-lg-3 d-flex justify-content-end">
-                        <div class="header-block block-weather">
+                        <div class="header-block block-support">
                             <div class="icon item">
                                 <i class="icon-hotline"></i>
                             </div>
@@ -50,7 +51,7 @@
     <!-- header primary (Logo, Menu) -->
     <div class="header-primary">
         <div class="container">
-            <div class="row align-items-end">
+            <div class="row">
                 <div class="col-6 col-md-3">
                     <!-- Logo -->
                     <div class="logo">
@@ -59,10 +60,10 @@
                         </h1>
                     </div>
                 </div>
-                <div class="col-md-9 d-flex flex-column align-items-end justify-content-end">
+                <div class="col-md-9 d-flex flex-column align-items-end">
                     <!-- Login -->
                     <div class="section-login">
-                        <a href="#" class="button">
+                        <a href="#" class="button button-light button-medium">
                             <i class="icon-user"></i>
                             <span>Đăng nhập</span>
                         </a>
@@ -159,7 +160,7 @@
     <!-- Section module slider -->
     <!-- Post layout slider -->
     <div class="section-post section-full section-post__slider module__slider"
-         data-slick='{"dots": true, "arrows": false}'>
+         data-slick='{"dots": true, "arrows": false, "fade": true}'>
         <div class="post-item">
             <div class="post-thumbnail">
                 <a href="detail.html"><img src="../assets/images/img-banner.jpg" alt=""></a>
@@ -170,7 +171,20 @@
                 </h3>
                 <p class="post-type">Tour trong nước</p>
                 <p class="post-price">Giá chỉ từ 1.999.000đ</p>
-                <a href="#" class="post-link button">Xem thêm</a>
+                <a href="#" class="post-link button button-large">Xem thêm</a>
+            </div>
+        </div>
+        <div class="post-item">
+            <div class="post-thumbnail">
+                <a href="detail.html"><img src="../assets/images/img-banner.jpg" alt=""></a>
+            </div>
+            <div class="post-info container">
+                <h3 class="post-title">
+                    <a href="detail.html">Tour trọn gói miền tây sông nước</a>
+                </h3>
+                <p class="post-type">Tour trong nước</p>
+                <p class="post-price">Giá chỉ từ 2.999.000đ</p>
+                <a href="#" class="post-link button button-large">Xem thêm</a>
             </div>
         </div>
         <div class="post-item">
@@ -183,20 +197,7 @@
                 </h3>
                 <p class="post-type">Tour trong nước</p>
                 <p class="post-price">Giá chỉ từ 1.999.000đ</p>
-                <a href="#" class="post-link button">Xem thêm</a>
-            </div>
-        </div>
-        <div class="post-item">
-            <div class="post-thumbnail">
-                <a href="detail.html"><img src="../assets/images/img-banner.jpg" alt=""></a>
-            </div>
-            <div class="post-info container">
-                <h3 class="post-title">
-                    <a href="detail.html">Giáng sinh các vùng miền cùng </a>
-                </h3>
-                <p class="post-type">Tour trong nước</p>
-                <p class="post-price">Giá chỉ từ 1.999.000đ</p>
-                <a href="#" class="post-link button">Xem thêm</a>
+                <a href="#" class="post-link button button-large">Xem thêm</a>
             </div>
         </div>
     </div>
@@ -210,16 +211,16 @@
             <div class="container">
                 <!-- Section Search -->
                 <section class="section-content">
-                    <div class="search box-shadow">
-                        <form id="searchForm">
-                            <div class="d-flex justify-content-between">
-                                <div class="input-search">
+                    <div class="search box-shadow box-overide">
+                        <form id="searchForm" class="bg-white form-search" action="search.html">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="input-search d-flex flex-grow-1 align-items-center">
                                     <i class="icon-search"></i>
                                     <input class="form-control" name="search-value"
                                            placeholder="Lựa chọn điểm đến, Tour, khách sạn"/>
                                 </div>
                                 <div class="input-submit">
-                                    <button type="submit"><i class="icon-arrow-double"></i></button>
+                                    <button type="submit" class="button button-accent"><i class="icon-arrow-double"></i></button>
                                 </div>
                             </div>
                         </form>
@@ -227,10 +228,10 @@
                 </section>
                 <!-- Section Icon Box -->
                 <section class="section-content">
-                    <div class="icon-box">
+                    <div class="box-icon">
                         <div class="row">
                             <div class="col-12 col-md-4">
-                                <div class="d-flex">
+                                <div class="d-flex item">
                                     <div class="icon"><i class="icon-tag"></i></div>
                                     <div class="info">
                                         <h4 class="title">Giá rẻ nhất</h4>
@@ -239,7 +240,7 @@
                                 </div>
                             </div>
                             <div class="col-12 col-md-4">
-                                <div class="d-flex">
+                                <div class="d-flex item">
                                     <div class="icon"><i class="icon-feedback"></i></div>
                                     <div class="info">
                                         <h4 class="title">Giá rẻ nhất</h4>
@@ -248,7 +249,7 @@
                                 </div>
                             </div>
                             <div class="col-12 col-md-4">
-                                <div class="d-flex">
+                                <div class="d-flex item">
                                     <div class="icon"><i class="icon-support"></i></div>
                                     <div class="info">
                                         <h4 class="title">Giá rẻ nhất</h4>
@@ -275,10 +276,10 @@
                                         <a href="detail.html">Hà Nội- Nha Trang - Phú Quốc</a>
                                     </h3>
                                     <div class="post-action">
-                                        <div class="d-flex">
+                                        <div class="d-flex align-items-center">
                                             <div class="post-rating">
                                                 <i class="icon-star"></i>
-                                                <span>3.2</span>
+                                                <strong>3.2</strong>
                                             </div>
                                             <a href="detail.html" class="button post-link">Recomment</a>
                                         </div>
@@ -294,10 +295,10 @@
                                         <a href="detail.html">Hà Nội- Nha Trang - Phú Quốc</a>
                                     </h3>
                                     <div class="post-action">
-                                        <div class="d-flex">
+                                        <div class="d-flex align-items-center">
                                             <div class="post-rating">
                                                 <i class="icon-star"></i>
-                                                <span>3.2</span>
+                                                <strong>3.2</strong>
                                             </div>
                                             <a href="detail.html" class="button post-link">Recomment</a>
                                         </div>
@@ -313,10 +314,10 @@
                                         <a href="detail.html">Hà Nội- Nha Trang - Phú Quốc</a>
                                     </h3>
                                     <div class="post-action">
-                                        <div class="d-flex">
+                                        <div class="d-flex align-items-center">
                                             <div class="post-rating">
                                                 <i class="icon-star"></i>
-                                                <span>3.2</span>
+                                                <strong>3.2</strong>
                                             </div>
                                             <a href="detail.html" class="button post-link">Recomment</a>
                                         </div>
@@ -332,10 +333,10 @@
                                         <a href="detail.html">Hà Nội- Nha Trang - Phú Quốc</a>
                                     </h3>
                                     <div class="post-action">
-                                        <div class="d-flex">
+                                        <div class="d-flex align-items-center">
                                             <div class="post-rating">
                                                 <i class="icon-star"></i>
-                                                <span>3.2</span>
+                                                <strong>3.2</strong>
                                             </div>
                                             <a href="detail.html" class="button post-link">Recomment</a>
                                         </div>
@@ -351,10 +352,10 @@
                                         <a href="detail.html">Hà Nội- Nha Trang - Phú Quốc</a>
                                     </h3>
                                     <div class="post-action">
-                                        <div class="d-flex">
+                                        <div class="d-flex align-items-center">
                                             <div class="post-rating">
                                                 <i class="icon-star"></i>
-                                                <span>3.2</span>
+                                                <strong>3.2</strong>
                                             </div>
                                             <a href="detail.html" class="button post-link">Recomment</a>
                                         </div>
@@ -370,10 +371,10 @@
                                         <a href="detail.html">Hà Nội- Nha Trang - Phú Quốc</a>
                                     </h3>
                                     <div class="post-action">
-                                        <div class="d-flex">
+                                        <div class="d-flex align-items-center">
                                             <div class="post-rating">
                                                 <i class="icon-star"></i>
-                                                <span>3.2</span>
+                                                <strong>3.2</strong>
                                             </div>
                                             <a href="detail.html" class="button post-link">Recomment</a>
                                         </div>
@@ -389,10 +390,10 @@
                                         <a href="detail.html">Hà Nội- Nha Trang - Phú Quốc</a>
                                     </h3>
                                     <div class="post-action">
-                                        <div class="d-flex">
+                                        <div class="d-flex align-items-center">
                                             <div class="post-rating">
                                                 <i class="icon-star"></i>
-                                                <span>3.2</span>
+                                                <strong>3.2</strong>
                                             </div>
                                             <a href="detail.html" class="button post-link">Recomment</a>
                                         </div>
@@ -408,10 +409,10 @@
                                         <a href="detail.html">Hà Nội- Nha Trang - Phú Quốc</a>
                                     </h3>
                                     <div class="post-action">
-                                        <div class="d-flex">
+                                        <div class="d-flex align-items-center">
                                             <div class="post-rating">
                                                 <i class="icon-star"></i>
-                                                <span>3.2</span>
+                                                <strong>3.2</strong>
                                             </div>
                                             <a href="detail.html" class="button post-link">Recomment</a>
                                         </div>
@@ -423,7 +424,7 @@
                 </section>
                 <!-- Section Icon Box -->
                 <section class="section-content">
-                    <div class="icon-box icon-box-alt style-white">
+                    <div class="box-icon box-icon-alt style-white">
                         <div class="row">
                             <div class="col-12 col-md-4">
                                 <div class="d-flex">
@@ -469,7 +470,7 @@
                                     </div>
                                     <div class="post-info">
                                         <h3 class="post-title">
-                                            <a href="detail.html">Hà Nội- Nha Trang - Phú Quốc</a>
+                                            <a href="detail.html">Đảo hòn gai</a>
                                         </h3>
                                         <span class="post-cat">24 Tour</span>
                                     </div>
@@ -482,7 +483,7 @@
                                     </div>
                                     <div class="post-info">
                                         <h3 class="post-title">
-                                            <a href="detail.html">Hà Nội- Nha Trang - Phú Quốc</a>
+                                            <a href="detail.html">Đảo hòn gai</a>
                                         </h3>
                                         <span class="post-cat">24 Tour</span>
                                     </div>
@@ -495,7 +496,7 @@
                                     </div>
                                     <div class="post-info">
                                         <h3 class="post-title">
-                                            <a href="detail.html">Hà Nội- Nha Trang - Phú Quốc</a>
+                                            <a href="detail.html">Đảo hòn gai</a>
                                         </h3>
                                         <span class="post-cat">24 Tour</span>
                                     </div>
@@ -674,14 +675,16 @@
                         <div class="custom-heading d-flex justify-content-center">
                             <h3 class="title color-white">Video trải nghiệm</h3>
                         </div>
-                        <div class="section-post section-post__video">
-                            <div class="post-item">
-                                <div class="post-thumbnail position-relative video-thumbnail">
-                                    <video class='video-js vjs-default-skin' controls preload='auto'
-                                           poster='../assets/images/banner1.png' height="246px"
-                                           data-setup='{"fluid": true}'>
-                                        <source src='https://vjs.zencdn.net/v/oceans.mp4' type='video/mp4'>
-                                    </video>
+                        <div class="container">
+                            <div class="section-post section-post__video">
+                                <div class="post-item">
+                                    <div class="post-thumbnail position-relative video-thumbnail">
+                                        <video class='video-js vjs-default-skin' controls preload='auto'
+                                               poster='../assets/images/poster-video.jpg' width="555px" height="330px"
+                                               data-setup=''>
+                                            <source src='https://vjs.zencdn.net/v/oceans.mp4' type='video/mp4'>
+                                        </video>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -788,7 +791,7 @@
                                     <h3 class="post-title">
                                         <a href="detail.html">Christine Weaver</a>
                                     </h3>
-                                    <p class="description">Every year middle class American families put off traveling
+                                    <p class="description mb-0">Every year middle class American families put off traveling
                                         because they’re too busy or too tired or they just don’t have enough money. And,
                                         in some ways, they’re right. Traveling can be expensive. But by taking the time
                                         to learn about discounts readily available to everyone through the internet</p>
@@ -804,7 +807,7 @@
                                     <h3 class="post-title">
                                         <a href="detail.html">Christine Weaver</a>
                                     </h3>
-                                    <p class="description">Every year middle class American families put off traveling
+                                    <p class="description mb-0">Every year middle class American families put off traveling
                                         because they’re too busy or too tired or they just don’t have enough money. And,
                                         in some ways, they’re right. Traveling can be expensive. But by taking the time
                                         to learn about discounts readily available to everyone through the internet</p>
@@ -820,7 +823,7 @@
                                     <h3 class="post-title">
                                         <a href="detail.html">Christine Weaver</a>
                                     </h3>
-                                    <p class="description">Every year middle class American families put off traveling
+                                    <p class="description mb-0">Every year middle class American families put off traveling
                                         because they’re too busy or too tired or they just don’t have enough money. And,
                                         in some ways, they’re right. Traveling can be expensive. But by taking the time
                                         to learn about discounts readily available to everyone through the internet</p>
@@ -888,7 +891,7 @@
 <!-- Footer -->
 <footer id="footer">
     <div class="container">
-        <div class="row align-items-center">
+        <div class="row">
             <div class="col-12 col-md-3">
                 <div class="logo">
                     <a href="#" class="d-block">
@@ -896,9 +899,9 @@
                     </a>
                 </div>
                 <div class="tax-info">
-                    <p>Công ty cổ phần dịch vụ TMS travel</p>
-                    <p>Mã số thuế: 000-111-222-333</p>
-                    <p>Văn phòng đại diện: Tầng 4, tòa nhà Vimeco, Phạm Hùng, Hà Nội.</p>
+                    <p class="mb-2">Công ty cổ phần dịch vụ TMS travel</p>
+                    <p class="mb-2">Mã số thuế: 000-111-222-333</p>
+                    <p class="mb-2">Văn phòng đại diện: Tầng 4, tòa nhà Vimeco, Phạm Hùng, Hà Nội.</p>
                     <p>Hotline: 000-111-222-333</p>
                 </div>
             </div>
@@ -947,10 +950,10 @@
                     <h3 class="widget-title">Social network</h3>
                     <div class="social">
                         <ul>
-                            <li><a href="#" class="facebook"><i class="icofont-facebook"></i></a></li>
-                            <li><a href="#" class="google"><i class="icofont-google-plus"></i></a></li>
-                            <li><a href="#" class="linkedin"><i class="icofont-linkedin"></i></a></li>
-                            <li><a href="#" class="twitter"><i class="icofont-twitter"></i></a></li>
+                            <li><a href="#" class="facebook"><i class="icon-facebook"></i></a></li>
+                            <li><a href="#" class="twitter"><i class="icon-twitter"></i></a></li>
+                            <li><a href="#" class="google"><i class="icon-google"></i></a></li>
+                            <li><a href="#" class="skype"><i class="icon-skype"></i></a></li>
                         </ul>
                     </div>
                 </div>

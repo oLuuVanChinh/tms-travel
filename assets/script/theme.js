@@ -71,6 +71,8 @@
                 $('.module__slider').each(function () {
                     $(this).slick({
                         arrows: false,
+                        prevArrow: '<button type="button" class="slick-prev"><i class="icon-arrow-left"></i></button>',
+                        nextArrow: '<button type="button" class="slick-next"><i class="icon-arrow-right"></i></button>',
                     });
                 });
             }

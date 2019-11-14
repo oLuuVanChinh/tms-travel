@@ -16,6 +16,7 @@
 </head>
 
 <body>
+<!-- Header -->
 <header id="header">
     <!-- header top -->
     <div class="header-top">
@@ -23,7 +24,7 @@
             <div class="top-inner">
                 <div class="row">
                     <div class="col-4 col-lg-6">
-                        <div class="header-block block-weather">
+                        <div class="header-block block-address">
                             <div class="icon item">
                                 <i class="icon-location"></i>
                             </div>
@@ -36,7 +37,7 @@
                         </div>
                     </div>
                     <div class="col-4 col-lg-3 d-flex justify-content-end">
-                        <div class="header-block block-weather">
+                        <div class="header-block block-support">
                             <div class="icon item">
                                 <i class="icon-hotline"></i>
                             </div>
@@ -50,7 +51,7 @@
     <!-- header primary (Logo, Menu) -->
     <div class="header-primary">
         <div class="container">
-            <div class="row align-items-end">
+            <div class="row">
                 <div class="col-6 col-md-3">
                     <!-- Logo -->
                     <div class="logo">
@@ -59,10 +60,10 @@
                         </h1>
                     </div>
                 </div>
-                <div class="col-md-9 d-flex flex-column align-items-end justify-content-end">
+                <div class="col-md-9 d-flex flex-column align-items-end">
                     <!-- Login -->
                     <div class="section-login">
-                        <a href="#" class="button">
+                        <a href="#" class="button button-light button-medium">
                             <i class="icon-user"></i>
                             <span>Đăng nhập</span>
                         </a>
@@ -166,16 +167,16 @@
     <!-- Content Primary -->
     <div class="content-primary">
         <!-- Content Area -->
-        <section class="content-area content-single">
+        <section class="content-area">
             <div class="container">
-                <!-- Section Detail Header -->
-                <section class="section-content">
-                    <div class="head box-shadow">
-                        <div class="d-flex justify-content-between align-items-center">
+                <div class="content-single">
+                    <!-- Section Detail Header -->
+                    <div class="head box-shadow box-overide">
+                        <div class="d-flex justify-content-between align-items-center bg-white">
                             <div class="info flex-grow-1">
                                 <div class="d-flex justify-content-between">
                                     <div class="name">
-                                        <strong>Tour Hạ Long - Quảng Ninh - Cát Bà</strong>
+                                        <strong class="text-uppercase">Tour Hạ Long - Quảng Ninh - Cát Bà</strong>
                                         <span>(3 Ngày 2 đêm)</span>
                                     </div>
                                     <div class="price">
@@ -184,13 +185,11 @@
                                 </div>
                             </div>
                             <div class="booking-buttom">
-                                <a href="#" class="button button-large">Đặt Ngay</a>
+                                <a href="#" class="button button-accent">Đặt Ngay</a>
                             </div>
                         </div>
                     </div>
-                </section>
-                <!-- Section breadcrumb -->
-                <section class="section-content">
+                    <!-- Section breadcrumb -->
                     <div class="d-flex">
                         <div class="breadcrumb">
                             <ul>
@@ -208,9 +207,7 @@
                             <li><a href="#">Mũi Né</a></li>
                         </ul>
                     </div>
-                </section>
-                <!-- Section content detail -->
-                <section class="section-content">
+                    <!-- Section content detail -->
                     <div class="detail-content">
                         <div class="row">
                             <!-- Detail Gallery -->
@@ -272,7 +269,7 @@
                                     </div>
                                 </div>
                                 <!-- Detail feature -->
-                                <div class="detail-feature">
+                                <div class="detail-feature mt-4 mb-4 pt-1">
                                     <div class="d-flex">
                                         <div class="item">
                                             <i class="icon-star"></i>
@@ -293,22 +290,24 @@
                                     </div>
                                 </div>
                                 <!-- Detail description -->
-                                <div class="detail-description">
+                                <div class="detail-description mb-4 pb-2">
                                     <div class="item d-flex">
                                         <i class="icon-tag-bold"></i>
-                                        <p>Mã 28</p>
+                                        <p class="mb-0">Mã 28</p>
                                     </div>
                                     <div class="item d-flex">
                                         <i class="icon-quote"></i>
-                                        <p>Ngôn ngữ tiếng Việt, tiếng Anh, tiếng Hàn, tiếng Nhật, tiếng Pháp, tiếng
+                                        <p class="mb-0">Ngôn ngữ tiếng Việt, tiếng Anh, tiếng Hàn, tiếng Nhật, tiếng Pháp, tiếng
                                             Đức</p>
                                     </div>
                                     <div class="item d-flex">
                                         <i class="icon-check"></i>
-                                        <p>Món ăn độc đáo Cơm văn phòng, ẩm thực Nam Định<br/>
-                                            Thực đơn Tôm, Cua, Ốc, Ếch, Gà, Cá tươu, thịt thú rừng, đặc sản bún bò Nam
+                                        <p class="mb-0">Món ăn độc đáo Cơm văn phòng, ẩm thực Nam Định<br/>
+                                            Thực đơn Tôm, Cua, Ốc, Ếch, Gà, Cá tươu, thịt thú rừng, đặc sản bún bò
+                                            Nam
                                             Định<br/>
-                                            Thời gian mở cửa 9h00 - 20h00 các ngày trong tuần; nghỉ thứ 7, chủ nhật và
+                                            Thời gian mở cửa 9h00 - 20h00 các ngày trong tuần; nghỉ thứ 7, chủ nhật
+                                            và
                                             các ngày lễ tết.<br/>
                                             Sức chứa 200 khách<br/>
                                             Quanh đây Hồ Gươm Hồ Tây Phố Cổ<br/>
@@ -320,7 +319,7 @@
                                 <!-- Detail Form Select -->
                                 <div class="detail-options">
                                     <div class="custom-heading">
-                                        <h3 class="title">Bảng giá</h3>
+                                        <h3 class="title d-flex">Bảng giá</h3>
                                     </div>
                                     <form class="formSelectOptions">
                                         <div class="row">
@@ -329,34 +328,36 @@
                                                     <div class="input-group-prepend">
                                                         <span class="input-group-text"><i class="icon-calendar"></i></span>
                                                     </div>
-                                                    <input type="text" class="form-control" placeholder="DD / MM / YY">
+                                                    <input type="text" class="form-control"
+                                                           placeholder="DD / MM / YY">
                                                 </div>
                                             </div>
                                             <div class="col-12 col-md-6">
                                                 <div class="input-group mb-3">
                                                     <div class="input-group-prepend">
-                                                        <span class="input-group-text"><i class="icon-user-plus"></i></span>
+                                                            <span class="input-group-text"><i
+                                                                    class="icon-user-plus"></i></span>
                                                     </div>
                                                     <input type="text" class="form-control" placeholder="1 Người">
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="radio-select">
-                                            <div class="item">
+                                        <div class="radio-select pt-3">
+                                            <div class="item position-relative mb-3">
                                                 <input type="radio" id="option_1" name="select" value="1" checked>
-                                                <label for="option_1" class="d-flex justify-content-between">
-                                                    <p class="d-block">
-                                                        <span class="d-block">Will The Democrats Be Able To Reverse The</span>
+                                                <label for="option_1" class="d-flex justify-content-between border-box">
+                                                    <p class="d-block mb-0">
+                                                        <span class="d-block mb-2 pb-1">Will The Democrats Be Able To Reverse The</span>
                                                         <small>Live Poker How To Win Tournament Games</small>
                                                     </p>
                                                     <strong class="price">230.000đ /đêm</strong>
                                                 </label>
                                             </div>
-                                            <div class="item">
+                                            <div class="item position-relative mb-3">
                                                 <input type="radio" id="option_2" name="select" value="2">
-                                                <label for="option_2" class="d-flex justify-content-between">
-                                                    <p class="d-block">
-                                                        <span class="d-block">Will The Democrats Be Able To Reverse The</span>
+                                                <label for="option_2" class="d-flex justify-content-between border-box">
+                                                    <p class="d-block mb-0">
+                                                        <span class="d-block mb-2 pb-1">Will The Democrats Be Able To Reverse The</span>
                                                         <small>Live Poker How To Win Tournament Games</small>
                                                     </p>
                                                     <strong class="price">230.000đ /đêm</strong>
@@ -365,49 +366,306 @@
                                         </div>
                                     </form>
                                 </div>
+                                <!-- Detail policy -->
+                                <div class="detail-policy">
+                                    <div class="custom-heading">
+                                        <h3 class="title d-flex">Chính sách</h3>
+                                    </div>
+                                    <div class="policy-items">
+                                        <div class="item mb-3 border-box">
+                                            <span class="d-block mb-2 pb-1">Don’t leave your shopping to the last minute. The more time you have to shop around, the more you can negotiate. It’s difficult to find bargains under pressure, so</span>
+                                            <small>Live Poker How To Win Tournament Games</small>
+                                        </div>
+                                        <div class="item mb-3 border-box">
+                                            <span class="d-block mb-2 pb-1">Don’t leave your shopping to the last minute. The more time you have to shop around, the more you can negotiate. It’s difficult to find bargains under pressure, so</span>
+                                            <small>Live Poker How To Win Tournament Games</small>
+                                        </div>
+                                        <div class="item mb-3 border-box">
+                                            <span class="d-block mb-2 pb-1">Don’t leave your shopping to the last minute. The more time you have to shop around, the more you can negotiate. It’s difficult to find bargains under pressure, so</span>
+                                            <small>Live Poker How To Win Tournament Games</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Detail Maps -->
+                                <div class="detail-map">
+                                    <div class="custom-heading">
+                                        <h3 class="title d-flex">Bản đồ</h3>
+                                    </div>
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.5904865870475!2d105.7911891152671!3d21.009046486008963!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab5612da8b23%3A0xd37b3360e78c5c1a!2sVimeco%20CT4%20Tower!5e0!3m2!1svi!2s!4v1573723284028!5m2!1svi!2s" width="750" height="270" frameborder="0" allowfullscreen=""></iframe>
+                                </div>
+                                <!-- Detail Maps -->
+                                <div class="detail-rating">
+                                    <div class="custom-heading">
+                                        <h3 class="title d-flex">Đánh giá<span>(24 đánh giá)</span></h3>
+                                    </div>
+                                    <div class="rating-items">
+                                        <div class="item d-flex border-box mb-3">
+                                            <div class="rating-head d-flex flex-column">
+                                                <strong class="title">Leila Rios</strong>
+                                                <div class="rating-star mt-auto">
+                                                    <i class="icon-star"></i>
+                                                    <strong>3.4</strong>
+                                                </div>
+                                            </div>
+                                            <div class="rating-info">
+                                                <span class="d-block mb-2">Texas Holdem is by far the most common for of poker played today due to is popularity there are even several TV shows of the game. Besides being popular texas Holdem is also the best game for a beginner to learn,</span>
+                                                <small class="date">31 Oct 2019</small>
+                                            </div>
+                                        </div>
+                                        <div class="item d-flex border-box mb-3">
+                                            <div class="rating-head d-flex flex-column">
+                                                <strong class="title">Leila Rios</strong>
+                                                <div class="rating-star mt-auto">
+                                                    <i class="icon-star"></i>
+                                                    <strong>3.4</strong>
+                                                </div>
+                                            </div>
+                                            <div class="rating-info">
+                                                <span class="d-block mb-2">Texas Holdem is by far the most common for of poker played today due to is popularity there are even several TV shows of the game. Besides being popular texas Holdem is also the best game for a beginner to learn,</span>
+                                                <small class="date">31 Oct 2019</small>
+                                            </div>
+                                        </div>
+                                        <div class="item d-flex border-box mb-3">
+                                            <div class="rating-head d-flex flex-column">
+                                                <strong class="title">Leila Rios</strong>
+                                                <div class="rating-star mt-auto">
+                                                    <i class="icon-star"></i>
+                                                    <strong>3.4</strong>
+                                                </div>
+                                            </div>
+                                            <div class="rating-info">
+                                                <span class="d-block mb-2">Texas Holdem is by far the most common for of poker played today due to is popularity there are even several TV shows of the game. Besides being popular texas Holdem is also the best game for a beginner to learn,</span>
+                                                <small class="date">31 Oct 2019</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                             <!-- Detail summary -->
                             <div class="col-12 col-md-4">
                                 <div class="detail-summary">
-                                    <div class="summary-price d-flex justify-content-between">
+                                    <div class="summary-price d-flex align-items-center justify-content-between mb-2">
                                         <strong>Giá chỉ từ:</strong>
                                         <span class="price">249.000đ / Người</span>
                                     </div>
-                                    <div class="note"><span class="color-red">Đảm bảo giá thấp nhất thị trường</span>
+                                    <div class="note"><span
+                                            class="color-red">Đảm bảo giá thấp nhất thị trường</span>
                                     </div>
                                     <div class="summary-form">
                                         <form class="formBooking">
-                                            <h3 class="title">Chọn ngày đặt</h3>
-                                            <div class="input-group mb-3">
+                                            <h6 class="title mb-3">Chọn ngày đặt</h6>
+                                            <div class="input-group mb-4">
                                                 <div class="input-group-prepend">
-                                                    <span class="input-group-text"><i class="icon-calendar"></i></span>
+                                                        <span class="input-group-text"><i
+                                                                class="icon-calendar"></i></span>
                                                 </div>
                                                 <input type="text" class="form-control" placeholder="DD / MM / YY">
                                             </div>
-                                            <div class="input-group mb-3">
+                                            <div class="input-group mb-4">
                                                 <div class="input-group-prepend">
-                                                    <span class="input-group-text"><i class="icon-user-plus"></i></span>
+                                                        <span class="input-group-text"><i
+                                                                class="icon-user-plus"></i></span>
                                                 </div>
                                                 <input type="text" class="form-control" placeholder="1 Người">
                                             </div>
-                                            <div class="input-submit">
-                                                <button type="submit" class="button">Đặt Ngay</button>
+                                            <div class="input-submit mt-4 pt-3">
+                                                <button type="submit" class="button button-accent">Đặt Ngay</button>
                                             </div>
                                         </form>
                                     </div>
                                     <div class="summary-action">
-                                        <div class="note">
+                                        <div class="note pt-4 pb-2">
                                             <p>Đặt giữ chỗ chỉ với 7% tổng hóa đơn.</p>
                                             <p>Nhà cung cấp sẽ liên hệ ngay sau khi bạn đặt cọc thành công.</p>
                                         </div>
-                                        <a href="#" class="button">Lưu sản phẩm</a>
-                                        <a href="#" class="button">Yêu cầu riêng</a>
+                                        <a href="#" class="button mb-3">Lưu sản phẩm</a>
+                                        <a href="#" class="button button-blue">Yêu cầu riêng</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </section>
+                    <!-- Section Post (Các tour đã xem) -->
+                    <section class="section-content">
+                        <div class="custom-heading">
+                            <h3 class="title">Các tour đã xem</h3>
+                        </div>
+                        <div class="section-post section-post__grid">
+                            <div class="row">
+                                <div class="col-6 col-md-3">
+                                    <div class="post-item">
+                                        <div class="post-thumbnail">
+                                            <a href="detail.html"><img src="../assets/images/img-location-1.jpg"
+                                                                       alt=""></a>
+                                        </div>
+                                        <h3 class="post-title">
+                                            <a href="detail.html">Hà Nội- Nha Trang - Phú Quốc</a>
+                                        </h3>
+                                        <div class="post-action">
+                                            <div class="d-flex">
+                                                <div class="post-rating">
+                                                    <i class="icon-star"></i>
+                                                    <span>3.2</span>
+                                                </div>
+                                                <a href="detail.html" class="button post-link">Recomment</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-3">
+                                    <div class="post-item">
+                                        <div class="post-thumbnail">
+                                            <a href="detail.html"><img src="../assets/images/img-location-2.jpg"
+                                                                       alt=""></a>
+                                        </div>
+                                        <h3 class="post-title">
+                                            <a href="detail.html">Hà Nội- Nha Trang - Phú Quốc</a>
+                                        </h3>
+                                        <div class="post-action">
+                                            <div class="d-flex">
+                                                <div class="post-rating">
+                                                    <i class="icon-star"></i>
+                                                    <span>3.2</span>
+                                                </div>
+                                                <a href="detail.html" class="button post-link">Recomment</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-3">
+                                    <div class="post-item">
+                                        <div class="post-thumbnail">
+                                            <a href="detail.html"><img src="../assets/images/img-location-3.jpg"
+                                                                       alt=""></a>
+                                        </div>
+                                        <h3 class="post-title">
+                                            <a href="detail.html">Hà Nội- Nha Trang - Phú Quốc</a>
+                                        </h3>
+                                        <div class="post-action">
+                                            <div class="d-flex">
+                                                <div class="post-rating">
+                                                    <i class="icon-star"></i>
+                                                    <span>3.2</span>
+                                                </div>
+                                                <a href="detail.html" class="button post-link">Recomment</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-3">
+                                    <div class="post-item">
+                                        <div class="post-thumbnail">
+                                            <a href="detail.html"><img src="../assets/images/img-location-3.jpg"
+                                                                       alt=""></a>
+                                        </div>
+                                        <h3 class="post-title">
+                                            <a href="detail.html">Hà Nội- Nha Trang - Phú Quốc</a>
+                                        </h3>
+                                        <div class="post-action">
+                                            <div class="d-flex">
+                                                <div class="post-rating">
+                                                    <i class="icon-star"></i>
+                                                    <span>3.2</span>
+                                                </div>
+                                                <a href="detail.html" class="button post-link">Recomment</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- Section Post (Top điểm đến nổi bật) -->
+                    <section class="section-content">
+                        <div class="custom-heading">
+                            <h3 class="title">Top điểm đến nổi bật</h3>
+                        </div>
+                        <div class="section-post section-post__grid">
+                            <div class="row">
+                                <div class="col-6 col-md-3">
+                                    <div class="post-item">
+                                        <div class="post-thumbnail">
+                                            <a href="detail.html"><img src="../assets/images/img-location-1.jpg"
+                                                                       alt=""></a>
+                                        </div>
+                                        <h3 class="post-title">
+                                            <a href="detail.html">Hà Nội- Nha Trang - Phú Quốc</a>
+                                        </h3>
+                                        <div class="post-action">
+                                            <div class="d-flex">
+                                                <div class="post-rating">
+                                                    <i class="icon-star"></i>
+                                                    <span>3.2</span>
+                                                </div>
+                                                <a href="detail.html" class="button post-link">Recomment</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-3">
+                                    <div class="post-item">
+                                        <div class="post-thumbnail">
+                                            <a href="detail.html"><img src="../assets/images/img-location-2.jpg"
+                                                                       alt=""></a>
+                                        </div>
+                                        <h3 class="post-title">
+                                            <a href="detail.html">Hà Nội- Nha Trang - Phú Quốc</a>
+                                        </h3>
+                                        <div class="post-action">
+                                            <div class="d-flex">
+                                                <div class="post-rating">
+                                                    <i class="icon-star"></i>
+                                                    <span>3.2</span>
+                                                </div>
+                                                <a href="detail.html" class="button post-link">Recomment</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-3">
+                                    <div class="post-item">
+                                        <div class="post-thumbnail">
+                                            <a href="detail.html"><img src="../assets/images/img-location-3.jpg"
+                                                                       alt=""></a>
+                                        </div>
+                                        <h3 class="post-title">
+                                            <a href="detail.html">Hà Nội- Nha Trang - Phú Quốc</a>
+                                        </h3>
+                                        <div class="post-action">
+                                            <div class="d-flex">
+                                                <div class="post-rating">
+                                                    <i class="icon-star"></i>
+                                                    <span>3.2</span>
+                                                </div>
+                                                <a href="detail.html" class="button post-link">Recomment</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-3">
+                                    <div class="post-item">
+                                        <div class="post-thumbnail">
+                                            <a href="detail.html"><img src="../assets/images/img-location-3.jpg"
+                                                                       alt=""></a>
+                                        </div>
+                                        <h3 class="post-title">
+                                            <a href="detail.html">Hà Nội- Nha Trang - Phú Quốc</a>
+                                        </h3>
+                                        <div class="post-action">
+                                            <div class="d-flex">
+                                                <div class="post-rating">
+                                                    <i class="icon-star"></i>
+                                                    <span>3.2</span>
+                                                </div>
+                                                <a href="detail.html" class="button post-link">Recomment</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
             </div>
         </section>
     </div>

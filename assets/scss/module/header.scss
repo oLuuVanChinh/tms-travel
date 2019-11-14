@@ -27,18 +27,33 @@
     .icon {
         margin-right: 8px;
         i{
-            font-size: 24px;
-            vertical-align: middle;
+            vertical-align: -1px;
         }
     }
 }
 
 .search {
     .icon-search{
-        cursor: pointer;
-        i{
-            font-size: 24px;
-            color: #C4C9D4;
-        }
+        font-size: 22px;
+        color: $black-color;
     }
+    .form-control{
+        height: 30px;
+        border: none;
+        font-size: 18px;
+    }
+    .input-search{
+        border-bottom: 1px solid $accent-color;
+        margin: 0 30px 0 24px;
+    }
+    .search-key{
+        margin-top: -20px;
+    }
+}
+.form-search{
+    border-radius: 8px;
+}
+
+.section-login{
+    margin-bottom: 21px;
 }

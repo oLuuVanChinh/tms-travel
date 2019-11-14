@@ -1,157 +1,37 @@
 @import "../common/mixins";
 @import "../common/variables";
 /* Sidebar */
-.sidebar {
-    .slick-slider {
-        .slick-dots{
-            position: static;
-        }
+.sidebar{
+    margin-top: -15px;
+}
+.widget {
+    @include css3-compatible("box-shadow", 0 2px 4px rgba(0,0,0,0.1));
+    margin-bottom: 24px;
+    .widget-title {
+        font-size: 16px;
+        font-weight: bold;
+        color: $black-color;
+        padding: 14px 0 8px;
+        border-bottom: 1px solid $accent-color;
+        text-align: center;
+        margin: 0;
     }
-    .widget {
-        margin-bottom: 24px;
-    }
-
-    .nav-tabs {
-        display: flex;
-        justify-content: center;
-        flex-grow: 1;
-        padding-bottom: 6px;
-        .nav-item {
-            font-size: 18px;
-            font-weight: bold;
-            text-transform: uppercase;
+    .menu{
+        ul{
+            list-style: none;
             margin: 0;
-            &:after {
-                content: "/";
-                color: $black-color;
-                margin: 0 20px;
-            }
-            &:last-child {
-                &:after {
-                    display: none;
-                }
-            }
-            &:not(.active){
-                color: rgba(26, 26, 26, 0.4);
-            }
-        }
-    }
-
-    .bg-gray {
-        padding: 14px 0 0;
-        .section-post__related .post-item,
-        .section-post__slider .post-title,
-        .custom-heading .title{
-            padding-left: 15px;
-            padding-right: 15px;
-        }
-    }
-
-    .widget-search{
-        form{
-            border: 1px solid #C4C9D4;
-            border-radius: 6px;
-            .form-control{
-                height: auto;
-                border: none;
-                background-color: transparent;
-            }
-            button{
-                background-color: transparent;
-                padding: 0 15px;
-                border: none;
-                color: #C4C9D4;
-                font-size: 28px;
-            }
-        }
-    }
-
-    .widget-scores {
-        h6 {
-            text-align: center;
-            color: #FFFFFF;
-            font-size: 18px;
-            line-height: 25px;
-            font-weight: bold;
-            margin-bottom: 18px;
-        }
-
-        padding: 24px 16px;
-        background: #2E5D61;
-
-        button {
-            padding: 5px 29px;
-            font-size: 16px;
-            text-transform: uppercase;
-            line-height: 22px;
-            color: #ffffff;
-            height: 40px;
-        }
-    }
-
-    .widget-weather {
-        background: #F0F0F0;
-        border: 1px solid #C4C9D4;
-        padding: 20px 24px 22px 24px;
-
-        h6 {
-            font-size: 16px;
-            line-height: 24px;
-            text-align: center;
-            font-weight: bold;
-        }
-
-        select {
-            color: #fff;
-            background: $second-color;
-            font-size: 16px;
-            height: 24px;
             padding: 0;
-
-            &:focus {
-                outline: none;
-            }
         }
-
-        .temperature {
+        a{
+            font-size: 16px;
+            height: 48px;
+            border-bottom: 1px solid #D8D8D8;
+            display: flex;
+            padding: 0 20px 0 40px;
             align-items: center;
-            justify-content: space-around;
-        }
-
-        .date {
-            text-align: center;
-        }
-
-        .item {
-            border-bottom: 1px solid #C5CAD5;
-            padding: 13px 0;
-        }
-
-        a {
-            color: $black-color;
-            font-size: 14px;
-            display: block;
-            text-decoration: underline;
-            line-height: 19px;
-            padding: 7px 0;
-        }
-
-        .hotline {
-            padding-top: 15px;
-            text-align: center;
-
-            p {
-                margin-bottom: 5px;
-                line-height: 19px;
-            }
-
-            a {
-                display: block;
-                color: #ED0202;
-                font-weight: bold;
-                font-size: 16px;
-                line-height: 22px;
-                padding: 0;
+            &.active, &:hover{
+                padding-left: 24px;
+                background-color: #F2F2F2;
             }
         }
     }

@@ -16,6 +16,7 @@
 </head>
 
 <body>
+<!-- Header -->
 <header id="header">
     <!-- header top -->
     <div class="header-top">
@@ -23,7 +24,7 @@
             <div class="top-inner">
                 <div class="row">
                     <div class="col-4 col-lg-6">
-                        <div class="header-block block-weather">
+                        <div class="header-block block-address">
                             <div class="icon item">
                                 <i class="icon-location"></i>
                             </div>
@@ -36,7 +37,7 @@
                         </div>
                     </div>
                     <div class="col-4 col-lg-3 d-flex justify-content-end">
-                        <div class="header-block block-weather">
+                        <div class="header-block block-support">
                             <div class="icon item">
                                 <i class="icon-hotline"></i>
                             </div>
@@ -50,7 +51,7 @@
     <!-- header primary (Logo, Menu) -->
     <div class="header-primary">
         <div class="container">
-            <div class="row align-items-end">
+            <div class="row">
                 <div class="col-6 col-md-3">
                     <!-- Logo -->
                     <div class="logo">
@@ -59,10 +60,10 @@
                         </h1>
                     </div>
                 </div>
-                <div class="col-md-9 d-flex flex-column align-items-end justify-content-end">
+                <div class="col-md-9 d-flex flex-column align-items-end">
                     <!-- Login -->
                     <div class="section-login">
-                        <a href="#" class="button">
+                        <a href="#" class="button button-light button-medium">
                             <i class="icon-user"></i>
                             <span>Đăng nhập</span>
                         </a>
@@ -158,7 +159,9 @@
 <div class="banner">
     <!-- Section Cover Image -->
     <div class="cover-image">
-        <img src="../assets/images/banner-search.jpg" alt="" />
+        <div class="feature-image">
+            <img src="../assets/images/banner-search.jpg" alt=""/>
+        </div>
     </div>
 </div>
 <!-- Content -->
@@ -170,16 +173,17 @@
             <div class="container">
                 <!-- Section Search -->
                 <section class="section-content">
-                    <div class="search box-shadow">
-                        <form id="searchForm">
-                            <div class="d-flex justify-content-between">
-                                <div class="input-search">
+                    <div class="search box-shadow box-overide">
+                        <form id="searchForm" class="bg-white form-search" action="search.html">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="input-search d-flex flex-grow-1 align-items-center">
                                     <i class="icon-search"></i>
                                     <input class="form-control" name="search-value"
                                            placeholder="Lựa chọn điểm đến, Tour, khách sạn"/>
                                 </div>
                                 <div class="input-submit">
-                                    <button type="submit"><i class="icon-arrow-double"></i></button>
+                                    <button type="submit" class="button button-accent"><i class="icon-arrow-double"></i>
+                                    </button>
                                 </div>
                             </div>
                         </form>
@@ -192,9 +196,7 @@
                             </ul>
                         </div>
                     </div>
-                </section>
-                <!-- Section breadcrumb -->
-                <section class="section-content">
+                    <!-- Section breadcrumb -->
                     <div class="breadcrumb">
                         <ul>
                             <li class="item"><a href="#">Home</a></li>
@@ -209,30 +211,32 @@
                 <div class="row">
                     <!-- Sidebar -->
                     <div class="col-12 col-md-3">
-                        <!-- Widget -->
-                        <div class="widget">
-                            <h3 class="widget-title">Loại hình dịch vụ</h3>
-                            <div class="menu">
-                                <ul>
-                                    <li><a href="#" class="active">Tour</a></li>
-                                    <li><a href="#">Khách sạn</a></li>
-                                    <li><a href="#">Nhà hàng</a></li>
-                                    <li><a href="#">Phương tiện</a></li>
-                                    <li><a href="#">Cẩm nang</a></li>
-                                </ul>
+                        <div class="sidebar">
+                            <!-- Widget -->
+                            <div class="widget">
+                                <h3 class="widget-title">Loại hình dịch vụ</h3>
+                                <div class="menu">
+                                    <ul>
+                                        <li><a href="#" class="active">Tour</a></li>
+                                        <li><a href="#">Khách sạn</a></li>
+                                        <li><a href="#">Nhà hàng</a></li>
+                                        <li><a href="#">Phương tiện</a></li>
+                                        <li><a href="#">Cẩm nang</a></li>
+                                    </ul>
+                                </div>
                             </div>
-                        </div>
-                        <!-- Widget -->
-                        <div class="widget">
-                            <h3 class="widget-title">Loại hình dịch vụ</h3>
-                            <div class="menu">
-                                <ul>
-                                    <li><a href="#" class="active">Tour</a></li>
-                                    <li><a href="#">Khách sạn</a></li>
-                                    <li><a href="#">Nhà hàng</a></li>
-                                    <li><a href="#">Phương tiện</a></li>
-                                    <li><a href="#">Cẩm nang</a></li>
-                                </ul>
+                            <!-- Widget -->
+                            <div class="widget">
+                                <h3 class="widget-title">Loại hình dịch vụ</h3>
+                                <div class="menu">
+                                    <ul>
+                                        <li><a href="#" class="active">Tour</a></li>
+                                        <li><a href="#">Khách sạn</a></li>
+                                        <li><a href="#">Nhà hàng</a></li>
+                                        <li><a href="#">Phương tiện</a></li>
+                                        <li><a href="#">Cẩm nang</a></li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -240,14 +244,15 @@
                         <!-- Section Post (Top điểm đến nổi bật) -->
                         <section class="section-content">
                             <div class="custom-heading">
-                                <h3 class="title">Việt Nam</h3>
+                                <h3 class="title d-flex">Việt Nam</h3>
                             </div>
                             <div class="section-post section-post__grid">
                                 <div class="row">
                                     <div class="col-6 col-md-4">
                                         <div class="post-item">
                                             <div class="post-thumbnail">
-                                                <a href="detail.html"><img src="../assets/images/img-location-1.jpg" alt=""></a>
+                                                <a href="detail.html"><img src="../assets/images/img-location-1.jpg"
+                                                                           alt=""></a>
                                             </div>
                                             <h3 class="post-title">
                                                 <a href="detail.html">Hà Nội- Nha Trang - Phú Quốc</a>
@@ -266,7 +271,8 @@
                                     <div class="col-6 col-md-4">
                                         <div class="post-item">
                                             <div class="post-thumbnail">
-                                                <a href="detail.html"><img src="../assets/images/img-location-2.jpg" alt=""></a>
+                                                <a href="detail.html"><img src="../assets/images/img-location-2.jpg"
+                                                                           alt=""></a>
                                             </div>
                                             <h3 class="post-title">
                                                 <a href="detail.html">Hà Nội- Nha Trang - Phú Quốc</a>
@@ -285,7 +291,8 @@
                                     <div class="col-6 col-md-4">
                                         <div class="post-item">
                                             <div class="post-thumbnail">
-                                                <a href="detail.html"><img src="../assets/images/img-location-3.jpg" alt=""></a>
+                                                <a href="detail.html"><img src="../assets/images/img-location-3.jpg"
+                                                                           alt=""></a>
                                             </div>
                                             <h3 class="post-title">
                                                 <a href="detail.html">Hà Nội- Nha Trang - Phú Quốc</a>
@@ -304,7 +311,8 @@
                                     <div class="col-6 col-md-4">
                                         <div class="post-item">
                                             <div class="post-thumbnail">
-                                                <a href="detail.html"><img src="../assets/images/img-location-4.jpg" alt=""></a>
+                                                <a href="detail.html"><img src="../assets/images/img-location-4.jpg"
+                                                                           alt=""></a>
                                             </div>
                                             <h3 class="post-title">
                                                 <a href="detail.html">Hà Nội- Nha Trang - Phú Quốc</a>
@@ -323,7 +331,8 @@
                                     <div class="col-6 col-md-4">
                                         <div class="post-item">
                                             <div class="post-thumbnail">
-                                                <a href="detail.html"><img src="../assets/images/img-location-5.jpg" alt=""></a>
+                                                <a href="detail.html"><img src="../assets/images/img-location-5.jpg"
+                                                                           alt=""></a>
                                             </div>
                                             <h3 class="post-title">
                                                 <a href="detail.html">Hà Nội- Nha Trang - Phú Quốc</a>
@@ -342,7 +351,8 @@
                                     <div class="col-6 col-md-4">
                                         <div class="post-item">
                                             <div class="post-thumbnail">
-                                                <a href="detail.html"><img src="../assets/images/img-location-6.jpg" alt=""></a>
+                                                <a href="detail.html"><img src="../assets/images/img-location-6.jpg"
+                                                                           alt=""></a>
                                             </div>
                                             <h3 class="post-title">
                                                 <a href="detail.html">Hà Nội- Nha Trang - Phú Quốc</a>
@@ -361,7 +371,8 @@
                                     <div class="col-6 col-md-4">
                                         <div class="post-item">
                                             <div class="post-thumbnail">
-                                                <a href="detail.html"><img src="../assets/images/img-location-7.jpg" alt=""></a>
+                                                <a href="detail.html"><img src="../assets/images/img-location-7.jpg"
+                                                                           alt=""></a>
                                             </div>
                                             <h3 class="post-title">
                                                 <a href="detail.html">Hà Nội- Nha Trang - Phú Quốc</a>
@@ -380,7 +391,8 @@
                                     <div class="col-6 col-md-4">
                                         <div class="post-item">
                                             <div class="post-thumbnail">
-                                                <a href="detail.html"><img src="../assets/images/img-location-8.jpg" alt=""></a>
+                                                <a href="detail.html"><img src="../assets/images/img-location-8.jpg"
+                                                                           alt=""></a>
                                             </div>
                                             <h3 class="post-title">
                                                 <a href="detail.html">Hà Nội- Nha Trang - Phú Quốc</a>
@@ -399,7 +411,8 @@
                                     <div class="col-6 col-md-4">
                                         <div class="post-item">
                                             <div class="post-thumbnail">
-                                                <a href="detail.html"><img src="../assets/images/img-location-6.jpg" alt=""></a>
+                                                <a href="detail.html"><img src="../assets/images/img-location-6.jpg"
+                                                                           alt=""></a>
                                             </div>
                                             <h3 class="post-title">
                                                 <a href="detail.html">Hà Nội- Nha Trang - Phú Quốc</a>
@@ -418,12 +431,13 @@
                                 </div>
                                 <!-- pagination -->
                                 <nav class="pagination-wrap">
-                                    <ul class="pagination pagination-lg">
+                                    <ul class="pagination">
                                         <li class="page-item active">
                                             <a class="page-link" href="#" tabindex="-1">1</a>
                                         </li>
                                         <li class="page-item"><a class="page-link" href="#">2</a></li>
                                         <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">…</a></li>
                                     </ul>
                                 </nav>
                             </div>
@@ -438,7 +452,8 @@
                                     <div class="col-6 col-md-4">
                                         <div class="post-item">
                                             <div class="post-thumbnail">
-                                                <a href="detail.html"><img src="../assets/images/img-location-1.jpg" alt=""></a>
+                                                <a href="detail.html"><img src="../assets/images/img-location-1.jpg"
+                                                                           alt=""></a>
                                             </div>
                                             <h3 class="post-title">
                                                 <a href="detail.html">Hà Nội- Nha Trang - Phú Quốc</a>
@@ -457,7 +472,8 @@
                                     <div class="col-6 col-md-4">
                                         <div class="post-item">
                                             <div class="post-thumbnail">
-                                                <a href="detail.html"><img src="../assets/images/img-location-2.jpg" alt=""></a>
+                                                <a href="detail.html"><img src="../assets/images/img-location-2.jpg"
+                                                                           alt=""></a>
                                             </div>
                                             <h3 class="post-title">
                                                 <a href="detail.html">Hà Nội- Nha Trang - Phú Quốc</a>
@@ -476,7 +492,8 @@
                                     <div class="col-6 col-md-4">
                                         <div class="post-item">
                                             <div class="post-thumbnail">
-                                                <a href="detail.html"><img src="../assets/images/img-location-3.jpg" alt=""></a>
+                                                <a href="detail.html"><img src="../assets/images/img-location-3.jpg"
+                                                                           alt=""></a>
                                             </div>
                                             <h3 class="post-title">
                                                 <a href="detail.html">Hà Nội- Nha Trang - Phú Quốc</a>
