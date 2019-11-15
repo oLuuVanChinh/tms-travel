@@ -47,8 +47,8 @@ a{
 }
 
 .fullwidth{
-    margin-left: calc((100vw - 1140px) / -2);
-    margin-right: calc((100vw - 1140px) / -2);
+    margin-left: -15px;
+    margin-right: -15px;
 }
 
 .middle-center {
@@ -108,7 +108,7 @@ figcaption{
 
 .logo {
     width: 100%;
-    padding: 12px 0 22px;
+    padding: 12px 0;
     a{
         display: inline-block;
     }
@@ -187,12 +187,6 @@ blockquote {
         font-weight: bold;
         font-size: 16px;
         background: $black-color;
-    }
-}
-
-@media (min-width: 1230px) {
-    .container {
-        max-width: 1170px;
     }
 }
 
@@ -358,14 +352,14 @@ button, .button {
     position: relative;
     overflow: hidden;
     .button{
-        width: 165px;
-        height: 80px;
+        width: 70px;
+        height: 60px;
         border-radius: 8px;
         font-size: 16px;
         text-transform: uppercase;
         font-weight: 300;
         i{
-            font-size: 30px;
+            font-size: 16px;
             margin-right: 0;
         }
     }
@@ -412,14 +406,18 @@ button, .button {
 /* Tags */
 .tags {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    padding: 33px 12px 16px;
+    padding: 33px 12px 10px;
     list-style: none;
     margin: 0;
+    li{
+        margin-bottom: 6px;
+    }
     a {
         display: inline-flex;
         align-items: center;
-        margin: 0 12px;
+        margin: 0 6px;
         height: 30px;
         color: #fff;
         padding: 0 15px;
@@ -433,9 +431,6 @@ button, .button {
 
 /* Icon Box */
 .box-icon{
-    .item{
-        padding-right: 25px;
-    }
     .icon{
         margin-right: 25px;
         i{
@@ -450,9 +445,7 @@ button, .button {
     &.style-white{
         background-color: $black-color;
         color: $white-color;
-        padding: 50px 40px;
-        margin-right: -30px;
-        margin-left: -30px;
+        padding: 15px;
         .icon{
             i{
                 color: $white-color;
@@ -477,8 +470,8 @@ button, .button {
     }
     img{
         width: 100%;
-        height: 250px;
-        max-height: 250px;
+        height: 150px;
+        max-height: 150px;
         object-fit: cover;
         object-position: center center;
     }
@@ -504,6 +497,132 @@ button, .button {
             .page-link{
                 background-color: $second-color;
             }
+        }
+    }
+}
+
+.menu-backdrop {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1071;
+    content: "";
+    width: 100%;
+    height: 100%;
+    @include css3-compatible(transition, all 0.8s ease 0s);
+    @include opacity(0);
+    visibility: hidden;
+}
+.menu-open {
+    overflow: hidden;
+
+    .menu-backdrop {
+        @include opacity(1);
+        visibility: visible;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+}
+/* Menu Mobile */
+.toggle-menu-on, .toggle-menu-off {
+    margin-left: 15px;
+    display: block;
+    span {
+        width: 24px;
+        height: 2px;
+        background-color: #000;
+        display: block;
+        margin: 4px 0;
+    }
+}
+.toggle-menu-off {
+    cursor: pointer;
+    margin: 20px 15px;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 10px;
+    span{
+        @include css3-compatible("transform", rotate(-45deg));
+        margin: 10px 0 0;
+        &:last-child{
+            margin-top: -2px;
+            @include css3-compatible("transform", rotate(45deg));
+        }
+    }
+}
+.menu-mobile {
+    position: fixed;
+    background-color: #fff;
+    height: 100%;
+    width: 320px;
+    top: 0;
+    right: 0;
+    padding: 5px 10px 20px 10px;
+    z-index: 1072;
+    @include css3-compatible("transform", translate3d(320px, 0, 0));
+    @include css3-compatible("transition", all 0.8s ease 0s);
+    overflow-y: auto;
+
+    .navigation {
+        padding: 0 15px;
+        .current-menu-parent, .current-menu-ancestor {
+            > .sub-menu {
+                display: block;
+            }
+        }
+
+        ul {
+            &.sub-menu {
+                margin-left: 15px;
+                display: none;
+                @include css3-compatible("transition", none);
+                list-style: none;
+            }
+
+            li {
+                margin: 10px 0;
+            }
+        }
+
+        a {
+            justify-content: flex-start;
+            color: #141515;
+            padding: 10px 0;
+            font-size: 14px;
+        }
+    }
+
+    &.open {
+        @include css3-compatible("box-shadow", 0 0 10px 4px rgba(0, 0, 0, 0.1));
+        @include css3-compatible("transform", translate3d(0, 0, 0));
+        @include css3-compatible("transition", all 0.8s ease 0s);
+    }
+
+    .toggle-menu {
+        position: absolute;
+        right: 0;
+        justify-content: center;
+        top: 0;
+        height: 24px;
+        width: 24px;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        @include css3-compatible("transform", rotate(-90deg));
+    }
+
+    .menu-item-has-children {
+        position: relative;
+    }
+
+    .sub-open{
+        > .toggle-menu{
+            @include css3-compatible("transform", rotate(90deg));
         }
     }
 }

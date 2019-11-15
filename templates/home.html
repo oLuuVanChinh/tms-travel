@@ -16,29 +16,136 @@
 </head>
 
 <body>
-<!-- Header -->
-<header id="header">
+<!-- Menu For Mobile -->
+<div class="menu-mobile d-block d-lg-none">
+    <span id="toggle-menu-off" class="toggle-menu-off">
+        <span></span>
+        <span></span>
+    </span>
+    <!-- Menu -->
+    <div class="navigation">
+        <div class="menu-content menu-pc">
+            <ul class="menu">
+                <li class="menu-item active">
+                    <a href="#">Trang chủ</a>
+                </li>
+                <li class="menu-item item-parent">
+                    <a href="#">Điểm đến
+                    </a>
+                    <ul class="sub-menu">
+                        <li class="menu-item item-parent">
+                            <a href="#">Level 1
+                            </a>
+                            <ul class="sub-menu">
+                                <li class="menu-item item-parent">
+                                    <a href="#">Level 2
+                                    </a>
+                                    <ul class="sub-menu">
+                                        <li class="menu-item">
+                                            <a href="#">Level 3</a>
+                                        </li>
+                                        <li class="menu-item">
+                                            <a href="#">Level 3</a>
+                                        </li>
+                                        <li class="menu-item">
+                                            <a href="#">Level 3</a>
+                                        </li>
+                                        <li class="menu-item">
+                                            <a href="#">Level 3</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">Level 2</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">Level 2</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">Level 2</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#">Level 1</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#">Level 1</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#">Level 1</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu-item">
+                    <a href="#">Tours</a>
+                </li>
+                <li class="menu-item">
+                    <a href="#">Khách sạn</a>
+                </li>
+                <li class="menu-item">
+                    <a href="#">Phương tiện</a>
+                </li>
+                <li class="menu-item">
+                    <a href="#">Cẩm nang</a>
+                </li>
+            </ul>
+        </div>
+    </div>
     <!-- header top -->
     <div class="header-top">
         <div class="container">
             <div class="top-inner">
                 <div class="row">
-                    <div class="col-4 col-lg-6">
+                    <div class="col-12 col-lg-6">
                         <div class="header-block block-address">
-                            <div class="icon item">
+                            <div class="icon item d-none d-lg-block">
                                 <i class="icon-location"></i>
                             </div>
                             <p class="mb-0">Tầng 4, tòa nhà Vimeco, Phạm Hùng, Hà Nội.</p>
                         </div>
                     </div>
-                    <div class="col-4 col-lg-3">
+                    <div class="col-12 col-lg-3">
                         <div class="header-block">
                             <p class="mb-0">Hotline: 19002123</p>
                         </div>
                     </div>
-                    <div class="col-4 col-lg-3 d-flex justify-content-end">
+                    <div class="col-12 col-lg-3 d-flex justify-content-lg-end">
                         <div class="header-block block-support">
-                            <div class="icon item">
+                            <div class="icon item d-none d-lg-block">
+                                <i class="icon-hotline"></i>
+                            </div>
+                            <p class="mb-0">Supplier</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Header -->
+<header id="header">
+    <!-- header top -->
+    <div class="header-top d-none d-lg-flex">
+        <div class="container">
+            <div class="top-inner">
+                <div class="row">
+                    <div class="col-12 col-lg-6">
+                        <div class="header-block block-address">
+                            <div class="icon item d-none d-lg-block">
+                                <i class="icon-location"></i>
+                            </div>
+                            <p class="mb-0">Tầng 4, tòa nhà Vimeco, Phạm Hùng, Hà Nội.</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-3">
+                        <div class="header-block">
+                            <p class="mb-0">Hotline: 19002123</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-3 d-flex justify-content-lg-end">
+                        <div class="header-block block-support">
+                            <div class="icon item d-none d-lg-block">
                                 <i class="icon-hotline"></i>
                             </div>
                             <p class="mb-0">Supplier</p>
@@ -52,24 +159,30 @@
     <div class="header-primary">
         <div class="container">
             <div class="row">
-                <div class="col-6 col-md-3">
+                <div class="col-5 col-md-3">
                     <!-- Logo -->
                     <div class="logo">
-                        <h1 class="mb-0"><a href="home.html"><img
+                        <h1 class="mb-0"><a class="d-flex" href="home.html"><img class="img-fluid"
                                 src="../assets/images/logo.png"></a>
                         </h1>
                     </div>
                 </div>
-                <div class="col-md-9 d-flex flex-column align-items-end">
+                <div class="col-7 col-md-9 d-flex flex-lg-column align-items-center align-items-lg-end justify-content-end justify-content-lg-start">
                     <!-- Login -->
                     <div class="section-login">
                         <a href="#" class="button button-light button-medium">
-                            <i class="icon-user"></i>
+                            <i class="icon-user d-none d-md-block"></i>
                             <span>Đăng nhập</span>
                         </a>
                     </div>
+                    <!-- Button Open Mobile Menu -->
+                    <a href="#" id="toggle-menu-on" class="d-lg-none toggle-menu-on">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </a>
                     <!-- Menu -->
-                    <div id="navigation" class="navigation">
+                    <div id="navigation" class="navigation d-none d-lg-block">
                         <div class="menu-content menu-pc">
                             <ul class="menu">
                                 <li class="menu-item active">
@@ -77,26 +190,14 @@
                                 </li>
                                 <li class="menu-item item-parent">
                                     <a href="#">Điểm đến
-                                        <!-- icon arrow down for menu has child -->
-                                        <span class="icon">
-                                            <i class="icofont-simple-down"></i>
-                                        </span>
                                     </a>
                                     <ul class="sub-menu">
                                         <li class="menu-item item-parent">
                                             <a href="#">Level 1
-                                                <!-- icon arrow down for menu has child -->
-                                                <span class="icon">
-                                                    <i class="icofont-simple-right"></i>
-                                                </span>
                                             </a>
                                             <ul class="sub-menu">
                                                 <li class="menu-item item-parent">
                                                     <a href="#">Level 2
-                                                        <!-- icon arrow down for menu has child -->
-                                                        <span class="icon">
-                                                            <i class="icofont-simple-right"></i>
-                                                        </span>
                                                     </a>
                                                     <ul class="sub-menu">
                                                         <li class="menu-item">
@@ -267,7 +368,7 @@
                     </div>
                     <div class="section-post section-post__grid">
                         <div class="row">
-                            <div class="col-6 col-md-3">
+                            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
                                 <div class="post-item">
                                     <div class="post-thumbnail">
                                         <a href="detail.html"><img src="../assets/images/img-location-1.jpg" alt=""></a>
@@ -286,7 +387,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-6 col-md-3">
+                            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
                                 <div class="post-item">
                                     <div class="post-thumbnail">
                                         <a href="detail.html"><img src="../assets/images/img-location-2.jpg" alt=""></a>
@@ -305,7 +406,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-6 col-md-3">
+                            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
                                 <div class="post-item">
                                     <div class="post-thumbnail">
                                         <a href="detail.html"><img src="../assets/images/img-location-3.jpg" alt=""></a>
@@ -324,7 +425,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-6 col-md-3">
+                            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
                                 <div class="post-item">
                                     <div class="post-thumbnail">
                                         <a href="detail.html"><img src="../assets/images/img-location-4.jpg" alt=""></a>
@@ -343,7 +444,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-6 col-md-3">
+                            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
                                 <div class="post-item">
                                     <div class="post-thumbnail">
                                         <a href="detail.html"><img src="../assets/images/img-location-5.jpg" alt=""></a>
@@ -362,7 +463,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-6 col-md-3">
+                            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
                                 <div class="post-item">
                                     <div class="post-thumbnail">
                                         <a href="detail.html"><img src="../assets/images/img-location-6.jpg" alt=""></a>
@@ -381,7 +482,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-6 col-md-3">
+                            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
                                 <div class="post-item">
                                     <div class="post-thumbnail">
                                         <a href="detail.html"><img src="../assets/images/img-location-7.jpg" alt=""></a>
@@ -400,7 +501,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-6 col-md-3">
+                            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
                                 <div class="post-item">
                                     <div class="post-thumbnail">
                                         <a href="detail.html"><img src="../assets/images/img-location-8.jpg" alt=""></a>
@@ -427,7 +528,7 @@
                     <div class="box-icon box-icon-alt style-white">
                         <div class="row">
                             <div class="col-12 col-md-4">
-                                <div class="d-flex">
+                                <div class="d-flex item">
                                     <div class="icon"><i class="icon-airplane"></i></div>
                                     <div class="info">
                                         <h4 class="title">Giá rẻ nhất</h4>
@@ -436,7 +537,7 @@
                                 </div>
                             </div>
                             <div class="col-12 col-md-4">
-                                <div class="d-flex">
+                                <div class="d-flex item">
                                     <div class="icon"><i class="icon-building"></i></div>
                                     <div class="info">
                                         <h4 class="title">Giá rẻ nhất</h4>
@@ -445,7 +546,7 @@
                                 </div>
                             </div>
                             <div class="col-12 col-md-4">
-                                <div class="d-flex">
+                                <div class="d-flex item">
                                     <div class="icon"><i class="icon-bus"></i></div>
                                     <div class="info">
                                         <h4 class="title">Giá rẻ nhất</h4>
@@ -463,7 +564,7 @@
                     </div>
                     <div class="section-post section-post__alt">
                         <div class="row">
-                            <div class="col-6 col-md-4">
+                            <div class="col-12 col-md-4">
                                 <div class="post-item">
                                     <div class="post-thumbnail">
                                         <a href="detail.html"><img src="../assets/images/img-tour-1.jpg" alt=""></a>
@@ -476,7 +577,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-6 col-md-4">
+                            <div class="col-12 col-md-4">
                                 <div class="post-item">
                                     <div class="post-thumbnail">
                                         <a href="detail.html"><img src="../assets/images/img-tour-2.jpg" alt=""></a>
@@ -489,7 +590,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-6 col-md-4">
+                            <div class="col-12 col-md-4">
                                 <div class="post-item">
                                     <div class="post-thumbnail">
                                         <a href="detail.html"><img src="../assets/images/img-tour-3.jpg" alt=""></a>
@@ -512,7 +613,7 @@
                     </div>
                     <div class="section-post section-post__alt post-alt__small">
                         <div class="row">
-                            <div class="col-6 col-md-2">
+                            <div class="col-6 col-md-4 col-lg-2">
                                 <div class="post-item">
                                     <div class="post-thumbnail">
                                         <a href="detail.html"><img src="../assets/images/img-hotel-1.jpg" alt=""></a>
@@ -524,7 +625,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-6 col-md-2">
+                            <div class="col-6 col-md-4 col-lg-2">
                                 <div class="post-item">
                                     <div class="post-thumbnail">
                                         <a href="detail.html"><img src="../assets/images/img-hotel-2.jpg" alt=""></a>
@@ -536,7 +637,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-6 col-md-2">
+                            <div class="col-6 col-md-4 col-lg-2">
                                 <div class="post-item">
                                     <div class="post-thumbnail">
                                         <a href="detail.html"><img src="../assets/images/img-hotel-3.jpg" alt=""></a>
@@ -548,7 +649,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-6 col-md-2">
+                            <div class="col-6 col-md-4 col-lg-2">
                                 <div class="post-item">
                                     <div class="post-thumbnail">
                                         <a href="detail.html"><img src="../assets/images/img-hotel-4.jpg" alt=""></a>
@@ -560,7 +661,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-6 col-md-2">
+                            <div class="col-6 col-md-4 col-lg-2">
                                 <div class="post-item">
                                     <div class="post-thumbnail">
                                         <a href="detail.html"><img src="../assets/images/img-hotel-5.jpg" alt=""></a>
@@ -572,7 +673,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-6 col-md-2">
+                            <div class="col-6 col-md-4 col-lg-2">
                                 <div class="post-item">
                                     <div class="post-thumbnail">
                                         <a href="detail.html"><img src="../assets/images/img-hotel-6.jpg" alt=""></a>
@@ -594,7 +695,7 @@
                     </div>
                     <div class="section-post section-post__alt post-alt__small">
                         <div class="row">
-                            <div class="col-6 col-md-2">
+                            <div class="col-6 col-md-4 col-lg-2">
                                 <div class="post-item">
                                     <div class="post-thumbnail">
                                         <a href="detail.html"><img src="../assets/images/img-bus-1.jpg" alt=""></a>
@@ -606,7 +707,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-6 col-md-2">
+                            <div class="col-6 col-md-4 col-lg-2">
                                 <div class="post-item">
                                     <div class="post-thumbnail">
                                         <a href="detail.html"><img src="../assets/images/img-bus-2.jpg" alt=""></a>
@@ -618,7 +719,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-6 col-md-2">
+                            <div class="col-6 col-md-4 col-lg-2">
                                 <div class="post-item">
                                     <div class="post-thumbnail">
                                         <a href="detail.html"><img src="../assets/images/img-bus-3.jpg" alt=""></a>
@@ -630,7 +731,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-6 col-md-2">
+                            <div class="col-6 col-md-4 col-lg-2">
                                 <div class="post-item">
                                     <div class="post-thumbnail">
                                         <a href="detail.html"><img src="../assets/images/img-bus-4.jpg" alt=""></a>
@@ -642,7 +743,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-6 col-md-2">
+                            <div class="col-6 col-md-4 col-lg-2">
                                 <div class="post-item">
                                     <div class="post-thumbnail">
                                         <a href="detail.html"><img src="../assets/images/img-bus-5.jpg" alt=""></a>
@@ -654,7 +755,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-6 col-md-2">
+                            <div class="col-6 col-md-4 col-lg-2">
                                 <div class="post-item">
                                     <div class="post-thumbnail">
                                         <a href="detail.html"><img src="../assets/images/img-bus-6.jpg" alt=""></a>
@@ -697,7 +798,7 @@
                     </div>
                     <div class="section-post section-post__grid">
                         <div class="row">
-                            <div class="col-6 col-md-3">
+                            <div class="col-12 col-sm-6 col-lg-3">
                                 <div class="post-item">
                                     <div class="post-thumbnail">
                                         <a href="detail.html"><img src="../assets/images/img-location-1.jpg" alt=""></a>
@@ -716,7 +817,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-6 col-md-3">
+                            <div class="col-12 col-sm-6 col-lg-3">
                                 <div class="post-item">
                                     <div class="post-thumbnail">
                                         <a href="detail.html"><img src="../assets/images/img-location-2.jpg" alt=""></a>
@@ -735,7 +836,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-6 col-md-3">
+                            <div class="col-12 col-sm-6 col-lg-3">
                                 <div class="post-item">
                                     <div class="post-thumbnail">
                                         <a href="detail.html"><img src="../assets/images/img-location-3.jpg" alt=""></a>
@@ -754,7 +855,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-6 col-md-3">
+                            <div class="col-12 col-sm-6 col-lg-3">
                                 <div class="post-item">
                                     <div class="post-thumbnail">
                                         <a href="detail.html"><img src="../assets/images/img-location-4.jpg" alt=""></a>
@@ -781,9 +882,9 @@
                     <div class="custom-heading">
                         <h3 class="title">Mọi người nói về chúng tôi</h3>
                     </div>
-                    <div class="section-post section-post__large module__slider" data-slick='{"dots": true, "slidesToShow": 2}'>
+                    <div class="section-post section-post__large module__slider" data-slick='{"dots": true, "slidesToShow": 2, "responsive": [{"breakpoint":992,"settings":{"slidesToShow": 1}}]}'>
                         <div class="post-item">
-                            <div class="d-flex">
+                            <div class="d-block d-sm-flex">
                                 <div class="post-thumbnail">
                                     <a href="detail.html"><img src="../assets/images/img-testimonial-1.jpg" alt=""></a>
                                 </div>
@@ -799,7 +900,7 @@
                             </div>
                         </div>
                         <div class="post-item">
-                            <div class="d-flex">
+                            <div class="d-block d-sm-flex">
                                 <div class="post-thumbnail">
                                     <a href="detail.html"><img src="../assets/images/img-testimonial-2.jpg" alt=""></a>
                                 </div>
@@ -815,7 +916,7 @@
                             </div>
                         </div>
                         <div class="post-item">
-                            <div class="d-flex">
+                            <div class="d-block d-sm-flex">
                                 <div class="post-thumbnail">
                                     <a href="detail.html"><img src="../assets/images/img-testimonial-3.jpg" alt=""></a>
                                 </div>
@@ -839,42 +940,42 @@
                     </div>
                     <div class="section-post section-post__grid post-grid__small">
                         <div class="row">
-                            <div class="col-6 col-md-2">
+                            <div class="col-6 col-md-4 col-lg-2">
                                 <div class="post-item">
                                     <div class="post-thumbnail">
                                         <a href="detail.html"><img src="../assets/images/img-partner-1.jpg" alt=""></a>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-6 col-md-2">
+                            <div class="col-6 col-md-4 col-lg-2">
                                 <div class="post-item">
                                     <div class="post-thumbnail">
                                         <a href="detail.html"><img src="../assets/images/img-partner-2.jpg" alt=""></a>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-6 col-md-2">
+                            <div class="col-6 col-md-4 col-lg-2">
                                 <div class="post-item">
                                     <div class="post-thumbnail">
                                         <a href="detail.html"><img src="../assets/images/img-partner-3.jpg" alt=""></a>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-6 col-md-2">
+                            <div class="col-6 col-md-4 col-lg-2">
                                 <div class="post-item">
                                     <div class="post-thumbnail">
                                         <a href="detail.html"><img src="../assets/images/img-partner-4.jpg" alt=""></a>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-6 col-md-2">
+                            <div class="col-6 col-md-4 col-lg-2">
                                 <div class="post-item">
                                     <div class="post-thumbnail">
                                         <a href="detail.html"><img src="../assets/images/img-partner-5.jpg" alt=""></a>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-6 col-md-2">
+                            <div class="col-6 col-md-4 col-lg-2">
                                 <div class="post-item">
                                     <div class="post-thumbnail">
                                         <a href="detail.html"><img src="../assets/images/img-partner-6.jpg" alt=""></a>
@@ -895,7 +996,7 @@
             <div class="col-12 col-md-3">
                 <div class="logo">
                     <a href="#" class="d-block">
-                        <img src="../assets/images/logo-footer.png" alt="">
+                        <img class="img-fluid" src="../assets/images/logo-footer.png" alt="">
                     </a>
                 </div>
                 <div class="tax-info">

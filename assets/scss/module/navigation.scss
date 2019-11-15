@@ -4,12 +4,8 @@
     padding: 0;
     margin: 0;
     list-style: none;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
 
     .menu-item {
-      margin-right: 48px;
       position: relative;
 
       a {
@@ -21,55 +17,23 @@
         display: block;
         position: relative;
         text-transform: uppercase;
-        &:after {
-          height: 12px;
-          width: 12px;
-          border: 2px solid $accent-color;
-          background-color: $white-color;
-          content: "";
-          position: absolute;
-          bottom: -20px;
-          left: 50%;
-          opacity: 0;
-          visibility: hidden;
-          border-radius: 50%;
-          @include css3-compatible("transform", translateX(-50%));
-          z-index: 1;
-        }
-
-        &:before {
-          height: 20px;
-          width: 100%;
-          background-color: transparent;
-          content: "";
-          position: absolute;
-          bottom: -20px;
-          left: 0;
-        }
       }
     }
 
     .sub-menu {
-      position: absolute;
-      background-color: #fff;
-      top: 64px;
-      z-index: 999;
-      left: 0;
-      @include css3-compatible("transition", all 0.3s ease 0s);
-      opacity: 1;
-      min-width: 225px;
-      padding: 10px 0;
+      padding: 0;
       margin: 0;
       list-style: none;
-      box-shadow: 0 8px 29px 0 rgba(198, 198, 198, 0.5);
-      @include opacity(0);
-      visibility: hidden;
       .menu-item {
-        padding: 10px 20px;
+        padding: 10px 0;
         margin: 0;
         a {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
           &:after {
-            display: none;
+            @include css3-compatible("transform", rotate(180deg));
+            font-size: 12px;
           }
         }
         .icon{
@@ -91,12 +55,12 @@
       }
     }
 
-    .menu-item {
+    > .menu-item {
       &:hover, &.active {
         > a {
           color: rgba(26, 26, 26, 1);
 
-          &:after {
+          &:before {
             opacity: 1;
             visibility: visible;
           }

@@ -7,10 +7,10 @@
         windowWidth = $(window).width(),
         menuMobile = $('.menu-mobile');
 
-    var eduTheme = {
+    var tmsTheme = {
         init: function () {
             // Mobile Menu
-            if (windowWidth < 768) {
+            if (windowWidth < 992) {
                 var menuBackdrop = '<div class="menu-backdrop"></div>';
                 body.append(menuBackdrop);
             }
@@ -33,12 +33,12 @@
                 var mobileMenu = $('.menu-mobile');
                 mobileMenu.each(function () {
                     var menuHasChild = $(this).find('.item-parent'),
-                        menuArrow = '<span class="toggle-menu"><i class="icofont-simple-down"></i></span>';
+                        menuArrow = '<span class="toggle-menu"><i class="icon-arrow-left"></i></span>';
                     menuHasChild.append(menuArrow);
                     var menuToggle = $(this).find('.toggle-menu');
                     menuToggle.click(function () {
                         $(this).parent().children('.sub-menu').slideToggle("fast", "linear");
-                        $(this).find('i').toggleClass('icofont-simple-down icofont-simple-up');
+                        $(this).parent().toggleClass('sub-open');
                     });
                 });
             }
@@ -108,11 +108,24 @@
             if($(".section-scroll").length > 0){
                 $(".section-scroll").nanoScroller();
             }
+            // footer widget
+            if (windowWidth < 767) {
+                if($(".footer-widget .widget-title").length > 0){
+                    $(".footer-widget .widget-title").each(function () {
+                        $(this).on("click", function (e) {
+                            e.preventDefault();
+                            $(this).next().slideToggle("fast", "linear");
+                            $(this).closest('.footer-widget').toggleClass('open');
+                        })
+                    })
+                }
+            }
+
         }
     }
-    window.eduTheme = eduTheme;
+    window.tmsTheme = tmsTheme;
 
     $(document).ready(function () {
-        eduTheme.init();
+        tmsTheme.init();
     });
 })(window.jQuery);
