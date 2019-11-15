@@ -109,7 +109,7 @@
                 $(".section-scroll").nanoScroller();
             }
             // footer widget
-            if (windowWidth < 767) {
+            if (windowWidth < 991) {
                 if($(".footer-widget .widget-title").length > 0){
                     $(".footer-widget .widget-title").each(function () {
                         $(this).on("click", function (e) {

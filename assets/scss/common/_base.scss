@@ -58,8 +58,8 @@ a{
 .border-box{
     border: 1px solid rgba(26,26,26,0.2);
     border-radius: 8px;
-    padding: 16px;
-    font-size: 18px;
+    padding: 10px;
+    font-size: 14px;
     small{
         font-size: 14px;
     }
@@ -352,7 +352,7 @@ button, .button {
     position: relative;
     overflow: hidden;
     .button{
-        width: 70px;
+        width: auto;
         height: 60px;
         border-radius: 8px;
         font-size: 16px;
@@ -408,7 +408,7 @@ button, .button {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    padding: 33px 12px 10px;
+    padding: 35px 12px 10px;
     list-style: none;
     margin: 0;
     li{
