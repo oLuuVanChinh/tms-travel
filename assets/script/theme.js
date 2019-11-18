@@ -29,18 +29,20 @@
                 toggleMenuMobile();
             });
 
-            if ($('.menu-mobile').length > 0) {
-                var mobileMenu = $('.menu-mobile');
-                mobileMenu.each(function () {
-                    var menuHasChild = $(this).find('.item-parent'),
-                        menuArrow = '<span class="toggle-menu"><i class="icon-arrow-left"></i></span>';
-                    menuHasChild.append(menuArrow);
-                    var menuToggle = $(this).find('.toggle-menu');
-                    menuToggle.click(function () {
-                        $(this).parent().children('.sub-menu').slideToggle("fast", "linear");
-                        $(this).parent().toggleClass('sub-open');
+            if (windowWidth < 992) {
+                if ($('.menu-mobile, .widget .menu').length > 0) {
+                    var mobileMenu = $('.menu-mobile, .widget .menu');
+                    mobileMenu.each(function () {
+                        var menuHasChild = $(this).find('.item-parent'),
+                            menuArrow = '<span class="toggle-menu"><i class="icon-arrow-left"></i></span>';
+                        menuHasChild.append(menuArrow);
+                        var menuToggle = $(this).find('.toggle-menu');
+                        menuToggle.click(function () {
+                            $(this).parent().children('.sub-menu').slideToggle("fast", "linear");
+                            $(this).parent().toggleClass('sub-open');
+                        });
                     });
-                });
+                }
             }
 
             // Back to top
@@ -65,9 +67,9 @@
                     }, 700);
                 });
             }
-            
+
             // Slider
-            if($('.module__slider').length > 0){
+            if ($('.module__slider').length > 0) {
                 $('.module__slider').each(function () {
                     $(this).slick({
                         arrows: false,
@@ -76,17 +78,17 @@
                     });
                 });
             }
-            
+
             // Fix conflict with boostrap tabs
-            $('a[data-toggle="tab"]').on('shown.bs.tab', function(e) {
+            $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
                 e.target
                 e.relatedTarget
                 $('.module__slider').slick('setPosition');
             });
-            
+
             // Set width for nav item
-            if(windowWidth <= 767){
-                if($('.custom-heading .nav-tabs .nav-item').length > 0){
+            if (windowWidth <= 767) {
+                if ($('.custom-heading .nav-tabs .nav-item').length > 0) {
                     $('.custom-heading .nav-tabs .nav-item').each(function () {
                         var itemNavWidth = $(this).outerWidth();
                         $(this).css("min-width", itemNavWidth);
@@ -105,12 +107,12 @@
                 });
             }
             // Scroll
-            if($(".section-scroll").length > 0){
+            if ($(".section-scroll").length > 0) {
                 $(".section-scroll").nanoScroller();
             }
             // footer widget
             if (windowWidth < 991) {
-                if($(".footer-widget .widget-title").length > 0){
+                if ($(".footer-widget .widget-title").length > 0) {
                     $(".footer-widget .widget-title").each(function () {
                         $(this).on("click", function (e) {
                             e.preventDefault();
@@ -121,6 +123,27 @@
                 }
             }
 
+            // sticky sidebar
+            if (windowWidth > 991) {
+                var detailStickyTop = $('.detail-summary').offset().top,
+                    detailBottom = $('.detail-bottom').offset().top,
+                    detailWidth = $('.detail-summary').outerWidth(),
+                    detailHeight = $('.detail-summary').outerHeight();
+
+                $(window).scroll(function () {
+                    var windowTop = $(window).scrollTop();
+
+                    if (detailStickyTop < windowTop) {
+                        $('.detail-summary').addClass('fixed').css("width", detailWidth);
+                    } else {
+                        $('.detail-summary').removeClass('fixed').css("width", "inherit");
+                    }
+
+                    if ((detailBottom - detailHeight) < windowTop) {
+                        $('.detail-summary').removeClass('fixed').css("width", "inherit");
+                    }
+                });
+            }
         }
     }
     window.tmsTheme = tmsTheme;

@@ -922,6 +922,8 @@ button, .button {
     list-style: none;
     margin: 0;
     padding: 0; }
+  .widget .menu li {
+    position: relative; }
   .widget .menu a {
     font-size: 16px;
     height: 48px;
@@ -1361,12 +1363,22 @@ button, .button {
     font-size: 16px;
     font-weight: bold; }
 
-.detail-summary .button {
+.detail-summary.fixed {
+  position: fixed;
+  background-color: #fff;
+  top: 0; }
+
+.detail-summary .button, .formSelectOptions .button {
   width: 100%;
   border-radius: 0;
   height: 60px;
   text-transform: uppercase;
   font-size: 16px; }
+
+.formSelectOptions .button {
+  display: inline-block;
+  width: 360px;
+  max-width: 100%; }
 
 .detail-feature {
   font-size: 18px; }
@@ -1669,6 +1681,57 @@ footer {
         left: 0; }
       .navigation .menu .sub-menu .menu-item {
         padding: 10px 20px; }
+  .widget .menu .item-parent > a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+    .widget .menu .item-parent > a:after {
+      content: "\e90f";
+      font-family: 'icomoon' !important;
+      transform: rotate(180deg);
+      -webkit-transform: rotate(180deg);
+      -khtml-transform: rotate(180deg);
+      -moz-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+      -o-transform: rotate(180deg);
+      display: inline-block;
+      font-size: 12px;
+      margin-left: 5px; }
+  .widget .menu .item-parent:hover > .sub-menu {
+    filter: alpha(opacity=100);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    opacity: 1;
+    -webkit-opacity: 1;
+    -khtml-opacity: 1;
+    -moz-opacity: 1;
+    -ms-opacity: 1;
+    -o-opacity: 1;
+    visibility: visible; }
+  .widget .menu .sub-menu {
+    position: absolute;
+    left: 100%;
+    z-index: 1;
+    background-color: #fff;
+    width: 100%;
+    top: 0;
+    box-shadow: 0 8px 29px 0 rgba(198, 198, 198, 0.5);
+    -webkit-box-shadow: 0 8px 29px 0 rgba(198, 198, 198, 0.5);
+    -khtml-box-shadow: 0 8px 29px 0 rgba(198, 198, 198, 0.5);
+    -moz-box-shadow: 0 8px 29px 0 rgba(198, 198, 198, 0.5);
+    -ms-box-shadow: 0 8px 29px 0 rgba(198, 198, 198, 0.5);
+    -o-box-shadow: 0 8px 29px 0 rgba(198, 198, 198, 0.5);
+    filter: alpha(opacity=0);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    opacity: 0;
+    -webkit-opacity: 0;
+    -khtml-opacity: 0;
+    -moz-opacity: 0;
+    -ms-opacity: 0;
+    -o-opacity: 0;
+    visibility: hidden; }
   .header-top {
     background-color: #1A1A1A;
     height: 48px;
@@ -1761,7 +1824,42 @@ footer {
     -khtml-transform: rotate(90deg);
     -moz-transform: rotate(90deg);
     -ms-transform: rotate(90deg);
-    -o-transform: rotate(90deg); } }
+    -o-transform: rotate(90deg); }
+  .widget .menu .toggle-menu {
+    position: absolute;
+    right: 0;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    top: 0;
+    height: 48px;
+    width: 48px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    cursor: pointer;
+    transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    -khtml-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg); }
+  .widget .menu .sub-open > .toggle-menu {
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -khtml-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg); }
+  .widget .menu .sub-menu {
+    display: none; }
+    .widget .menu .sub-menu .sub-menu a {
+      padding-left: 55px; }
+    .widget .menu .sub-menu .sub-menu .sub-menu a {
+      padding-left: 70px; } }
 
 @media only screen and (max-width: 767px) {
   .box-icon .item {
