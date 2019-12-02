@@ -1232,6 +1232,19 @@ button, .button {
 .section-post__grid .post-title {
   padding: 24px 16px 28px; }
 
+.section-post__grid .post-price {
+  padding: 0 16px;
+  margin-top: -16px; }
+  .section-post__grid .post-price .price {
+    font-size: 18px;
+    font-weight: bold;
+    color: #F46825; }
+  .section-post__grid .post-price .old-price {
+    text-decoration: line-through; }
+  .section-post__grid .post-price span {
+    display: block;
+    padding: 2px 0; }
+
 .post-grid__small .post-item {
   border-radius: 0; }
 

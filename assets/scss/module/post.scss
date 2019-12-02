@@ -322,6 +322,22 @@
   .post-title {
     padding: 24px 16px 28px;
   }
+  .post-price{
+    padding: 0 16px;
+    margin-top: -16px;
+    .price{
+      font-size: 18px;
+      font-weight: bold;
+      color: $second-color;
+    }
+    .old-price{
+      text-decoration: line-through;
+    }
+    span{
+      display: block;
+      padding: 2px 0;
+    }
+  }
 }
 
 .post-grid__small {
